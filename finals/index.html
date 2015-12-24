@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<title>Grade Calculator</title>
+	<link type="text/css" rel="stylesheet" href="../Style/grade calculator style.css">
+	<link type="text/css" rel="stylesheet" href="../Style/rth style.css">
+	<script type="text/javascript" src="../Scripts/grade calculator script.js"></script>
+	<link rel="shortcut icon" href="../favicon.ico" />
+</head>
+
+
+<body onload="buttonSelected()">
+
+<h1>Finals Grade Calculator</h1>
+<form>
+	<input type="radio" name="grade" id="forty" checked="checked" onclick="buttonSelected()" class="space"><label for="forty" class="space">  Each quarter is counted equally (grades reset after midterm).</span>
+	<input type="radio" name="grade" id="eighty" onclick="buttonSelected()" class="space"><label for="eighty" class="space">  The semester is one grade (grades don't reset).</label>
+</form>	
+<form>	
+	<span id ="firstQuarterLabel">First Quarter Grade: </span><input type="text" id="grade1" onkeyup="if (event.keyCode == 13) { calculate(); return false; }">
+	<br>
+	<span id ="secondQuarterLabel">Second Quarter Grade: </span><input type="text" id="grade2" onkeyup="if (event.keyCode == 13) { calculate(); return false; }">
+</form>
+<br>
+The final is
+<select id="finalPercent" onkeyup="if (event.keyCode == 13) { calculate(); return false; }">
+	<option value="0.10">10</option>
+	<option value="0.20" selected="selected">20</option>
+	<option value="0.30">30</option>
+	<option value="0.40">40</option>
+	<option value="0.50">50</option>
+	<option value="0.60">60</option>
+	<option value="0.70">70</option>
+	<option value="0.80">80</option>
+	<option value="0.90">90</option>
+</select>
+percent of your grade.
+<br><br>
+
+<button onClick="calculate(); return false;">Calculate!</button>
+
+<br><br>
+
+<table>
+	<tr id="title"><td>Grade in Class</td><td>Grade on Final</td></tr>
+	<tr><td>A</td><td id="A"></td></tr>
+	<tr><td>A-</td><td id="A1"></td></tr>
+	<tr><td>B+</td><td id="B0"></td></tr>
+	<tr><td>B</td><td id="B"></td></tr>
+	<tr><td>B-</td><td id="B1"></td></tr>
+	<tr><td>C+</td><td id="C0"></td></tr>
+	<tr><td>C</td><td id="C"></td></tr>
+	<tr><td>C-</td><td id="C1"></td></tr>
+	<tr><td>D+</td><td id="D0"></td></tr>
+	<tr><td>D</td><td id="D"></td></tr>
+	<tr><td>D-</td><td id="D1"></td></tr>	
+</table>
+
+<h2>To get an A in the class, you need a <span id="insertHere">__</span> percent on the final.</h2>
+
+<h1>Good luck!</h1>
+
+
+
+
+<a href="../index.html" id="returnToHome">Return to Main Page</a>	
+
+</body>
+
+
+
+</html>
