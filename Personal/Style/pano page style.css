@@ -1,0 +1,28 @@
+#returntohome {
+	text-decoration: none;
+	color: black;
+}
+
+#returntohome:hover {
+	font-weight: bold;
+}
+
+#gohome {
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	width: 110px;
+	border-radius: 5px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid black;
+}
+
+img {
+	height: auto;
+	/* background-size: cover; */
+	background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}

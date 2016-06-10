@@ -1,0 +1,76 @@
+img {
+	display: inline-block;
+	size: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+div {
+	display: inline-block;
+}
+
+.box {
+	border-radius: 20px;
+}
+
+.container {
+	margin: 8px;
+	text-align: center;
+	background-color: darkgrey;
+	border-radius: 20px;
+	float: top left;
+}
+
+p {
+	font-size: 20px;
+	margin: 1px;
+	padding: 2px;
+}
+
+#shine {
+	width: 306px;
+}
+
+#stories {
+	width: 238px;
+	text-align: center;
+	margin-left: 23px;
+}
+
+body {
+	background-color: #444444;
+}
+
+#scars {
+	width: 397px;
+}
+
+#test {
+	width: 263px;
+	margin: 8px;
+}
+
+#returntohome {
+	text-decoration: none;
+	color: black;
+}
+
+#returntohome:hover {
+	font-weight: bold;
+}
+
+#gohome {
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	width: 110px;
+	border-radius: 5px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid black;
+}
+
+
+
+

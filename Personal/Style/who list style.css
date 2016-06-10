@@ -1,0 +1,346 @@
+body {
+	background-color: aliceblue;
+	font: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+#header {
+	text-align: center;
+	clear: both;
+}
+
+h1 {
+	margin-bottom: 1px;
+	font-size: 40px;
+}
+	
+h4 {
+	padding: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-size: 20px;
+}
+
+#everything {
+	text-align: center;
+	clear: both;
+}
+
+button {
+	border-radius: 7px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: white;
+}	
+
+#returntohome {
+	position: fixed;
+	text-align: left;
+	float: top;
+	margin-top: 1px;
+	border: 2px solid #444444;
+	border-radius: 8px;
+	background-color: gray;
+	padding: 2px;
+	height: 18px;
+	width: 108px;
+	z-index: 1;
+}	
+
+#rtt {
+	text-decoration: none;
+	color: black;
+	background-color: grey;
+	margin: auto;
+}
+
+#rtt:hover {
+	font-weight: bold;
+}		
+
+#rtt:visited {
+	color: black;
+}
+
+#backtotop {
+	position: fixed;
+	text-align: left;
+	float: top;
+	margin-top: 1px;
+	border: 2px solid gray;
+	border-radius: 8px;
+	background-color: darkgray;
+	padding: 2px;
+	height: 18px;
+	width: 80px;
+}	
+
+#btt {
+	text-decoration: none;
+	background-color: darkgrey;
+	margin: auto;
+}
+
+#btt:hover {
+	font-weight: bold;
+}		
+
+#btt:visited {
+	color: black;
+}
+
+#classicWhobox {
+	background-color: midnightblue;
+	border-radius: 5px;
+}
+
+#newWhobox {
+	background-color: navy;
+	border-radius: 5px;
+}
+
+#torchwoodbox {
+	background-color: darkgreen;
+	border-radius: 5px;
+}
+
+#SJAbox {
+	background-color: purple;
+	border-radius: 5px;
+}
+
+#minisodebox {
+	background-color: darkorange;
+}
+
+#alienFilebox {
+	background-color: lime;
+}
+
+#otherbox {
+	background-color: #DDB500;
+}
+
+#mebox {
+	background-color: red;
+}
+
+#iebox {
+	background-color: black;
+}
+
+#buttons {
+	height: 5px;
+}
+	
+input {
+	color: green;
+}	
+
+.box {
+	border-radius: 5px;
+	display: inline;
+	font-size: 15px;
+	margin: 8px;
+	cursor: pointer;
+	padding: 2px;
+	text-align: center;
+}
+
+#keyToTime {
+	margin: auto;
+	border: 3px dashed purple;
+	width: 700px;
+}	
+
+#ktt {
+	padding: 0px;
+}	
+
+#trial {
+	margin: auto;
+	border: 3px dashed #FE365E;
+	width: 700px;
+}
+
+#toatl {
+	padding: 0px;
+}
+
+.classicSeasonHeading {
+	font-size: 35px;
+	color: midnightblue;
+}	
+.serialTitle {
+	font-weight: bold;
+	font-size: 28px;
+	color: midnightblue;
+}	
+
+.CWEpisode {
+	color: midnightblue;
+	font-size: 20px;
+}
+
+.missing {
+	color: red;
+}	
+
+.otherTitle {
+	font-weight: bold;
+	font-size: 28px;
+	color: #DDB500;
+}	
+
+.newSeriesHeading {
+	font-size: 35px;
+	color: navy;
+}	
+
+.NWEpisode {
+	color: navy;
+	font-size: 20px;
+}
+
+.SJAheading {
+	font-size: 35px;
+	color: purple;
+}
+
+.SJAEpisode {
+	font-size: 20px;
+	color: purple;
+}
+
+.TWheading {
+	font-size: 35px;
+	color: darkgreen;
+}
+
+.TWEpisode {
+	font-size: 20px;
+	color: darkgreen;
+}	
+
+.minisode {
+	color: darkorange;	
+	font-size: 20px;
+}	
+
+.other {
+	color: #DDB500;
+	font-size: 20px;
+}	
+
+#coe {
+	margin: auto;
+	border: 3px dashed grey;
+	width: 700px;
+}
+
+#COE {
+	padding: 0px;
+}		
+
+.AFEpisode {
+	color: lime;
+	font-size: 20px;
+}
+
+.AFEpisodes {
+	color: lime;
+	font-size: 20px;
+}	
+
+.otherHeading {
+	font-size: 35px;
+	color: #DDB500;
+}
+
+.AFheading {
+	color: lime;
+	font-size: 35px;
+}
+
+#md {
+	margin: auto;
+	border: 3px dashed lightslategray;
+	width: 700px;
+}
+
+#MD {
+	padding: 0px;
+}
+
+#returntohome, #backtotop {
+	text-align: center;
+}
+
+.selector div {
+	width: 25px;
+	height: 25px;
+	border-radius: 4px;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	display: inline-block;
+	margin: 1px;
+}
+
+.CWselect div {
+	background-color: midnightblue;
+}
+
+.NWselect div {
+	background-color: navy;
+}
+
+.TWselect div {
+	background-color: darkgreen;
+}
+
+.SJAselect div {
+	background-color: purple;
+}	
+
+#af1 div {
+	background-color: lime;
+}
+
+.selectBox {
+	border-radius: 5px;
+	text-align: left;
+	float: top;
+	position: fixed;
+	margin-right: 10px;
+	display: inline-block;
+	width: 173px;
+}
+
+#buttonBox {
+	text-align: left;
+	float: right;
+	display: inline-block;
+	margin-right: 170px;
+}
+
+#leftContainer {
+	display: inline-block;
+}
+
+label, input, .box {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

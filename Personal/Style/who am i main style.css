@@ -1,0 +1,80 @@
+.container {
+	border: none;
+	display: inline-block;
+	margin: 10px;
+	height: 210px;
+	width: 210px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.mainbox {
+	display: inline-block;
+	margin: auto;
+	border: 4px solid black;
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+.mainbox:hover {
+	box-shadow: 6px 6px 15px #222222;
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+	text-shadow: 4px 4px 5px #666666;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	color: #111111;
+}
+
+#bigbox {
+	margin: auto;
+	text-align: center;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: lightsteelblue;
+}
+
+#storydiv {
+	text-decoration: none;
+	font-size: 37px;
+	color: white;
+	background-image: url("../Images/story background 2.jpeg");
+	background-size: 200px 400px;
+	font-family: 'Courier', serif;
+	margin: auto;
+}
+
+body {
+	background-image: url("../Images/main wallpaper.png");
+	background-size: cover; 
+	background-position: 50% -25%;
+}
+
+p {
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#patch {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 95px;
+	left: 1385px;
+	background-color: #333333;
+}

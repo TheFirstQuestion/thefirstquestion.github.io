@@ -1,0 +1,118 @@
+h1 {
+	margin-left: 100px;
+	font-size: 40px;
+	text-shadow: 2px 2px #CCCCCC;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: bold;
+}
+
+#quote {
+	height: 220px;
+	width: 450px;
+	font-size: 25px;
+	padding-left: 20px;
+	margin-left: 100px;
+	text-shadow: 2px 2px #CCCCCC;
+	font-family: 'Maven Pro', sans-serif;
+}	
+
+#ready {
+	font-size: 50px;
+	margin-left: 150px;
+	text-shadow: 1px 1px red;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+#intro {
+	margin-left: 100px;
+}
+
+* {
+	font-family: 'Maven Pro', sans-serif;
+}	
+
+// Heading
+* {
+	font-family: 'Maven Pro', sans-serif;
+}	
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; 
+}
+
+.headLinks:hover {
+	font-weight: bold;
+}
+
+.head {
+	display: inline-block;
+	height: 25px;
+	width: 200px;
+	text-align: center;
+	margin: 10px;
+	background-color: navy;
+	border-radius: 6px;
+	border: 1px solid #666666;
+	line-height: 25px;
+	box-shadow: 2px 2px #AAAAAA;
+}
+
+#heading {
+	margin: auto;
+	width: 1200px;
+	border-radius: 8px;
+	background-color: blue;
+	border: 2px solid navy;
+	padding-top: 1px;
+	margin-top: 1px;
+}
+
+#listDiv {
+	height: 30px;
+	width: 250px;
+	margin-top: 1px; 
+	line-height: 30px;
+}
+
+.headLinks {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+#list {
+	box-shadow: 1px;
+	font-size: 22px;
+}
+
+#header {
+	width: 1220px;
+	margin: auto;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+	font-size: 40px;
+	color: navy;
+	text-shadow: 2px 2px lime;
+	height: 50px;
+	width: 200px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+}
+
+h4 {
+	margin-top: 1px;
+	padding-top: 1px;
+} 
+//End heading 
+
+
+
+

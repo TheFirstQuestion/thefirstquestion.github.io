@@ -1,0 +1,55 @@
+body {
+	background-color: navajowhite;
+}
+
+p {
+	font-size: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.choice {
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 25px;
+	border: 3px solid black;
+	background-color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	margin: 10px;
+	color: black;
+}
+
+.choice:hover {
+	background-color: black;
+	color: white;
+}
+
+#choiceLabel {
+	font-size: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#choiceHolder {
+	margin-top: 30px;
+}
+
+#choiceLabel {
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+h1 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+img {
+	margin-left: 10px;
+}

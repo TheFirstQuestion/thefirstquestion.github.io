@@ -1,0 +1,686 @@
+body {
+	background-color: rgba(101, 135, 220, 0.8);
+}
+
+#big {
+	border: 2px solid black;
+	background-color: white;
+	display: inline-block;
+	width: 600px; /* 660 */
+	height: 715px;
+	margin-top: 5px;
+	vertical-align: top;
+	margin-left: 30px;
+}
+
+#mainimg {
+	display: inline-block;
+	width: 664px;
+	height: 717px;
+	z-index: 0;
+	position: static;
+}
+
+#maindiv {
+	width: 664px;
+	height: 717px;
+	border: 1px solid black;
+	margin-left: 25px;
+	margin-right: 1px;
+	margin-top: 5px;
+	display: inline-block;
+	position: relative;
+}
+
+#button {
+	margin: auto;
+	border-radius: 5px;
+	border: 2px solid blue;
+	background-color: rgba(175, 203, 224, 0.8);
+	text-decoration: none;
+	text-align: center;
+	width: 150px;
+	font-family: serif;
+}
+
+#buttonlink {
+	text-decoration: none;
+	color: black;
+}
+
+#buttonlink:visited {
+	color: black;
+}
+
+#button:hover {
+	font-weight: bold;
+}
+
+/* Dot color based on who's victory */
+.uwin {
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+	border: 2px solid black;
+	z-index: 1;
+	position: absolute;
+	display: inline;
+}
+
+.cwin {
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: grey;
+	border: 2px solid black;
+	z-index: 1;
+	position: absolute;
+	display: inline;
+}
+
+.inc {
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border: 2px solid grey;
+	z-index: 1;
+	position: absolute;
+	display: inline;
+}
+
+/* Individual battles specifics */
+
+/* B6 */
+#winchester {
+	top: 409px; 
+	left: 589px; 
+}
+
+	#winchester:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: grey;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;	
+	}
+
+#bullsRun {
+	top: 490px;
+	left: 606px;
+}
+
+	#bullsRun:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: grey;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#chancellorsville {
+	top: 543px;
+	left: 642px;
+}
+
+	#chancellorsville:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: grey;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#appomattox {
+	top: 668px;
+	left: 544px;
+}
+
+	#appomattox:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+/* B7 */
+#gettysburg {
+	top: 307px;
+	left: -22px;
+}
+
+	#gettysburg:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#antietam {
+	top: 362px;
+	left: -18px;
+}
+
+	#antietam:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: black;
+		border: 2px solid grey;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#malvernHill {
+	top: 608px; 
+	left: 52px; 
+}
+
+	#malvernHill:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+	#info {
+		display: none;
+	}
+
+#spotsylvania {
+	top: 608px;
+	left: -11px;
+}
+
+	#spotsylvania:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: black;
+		border: 2px solid grey;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#petersburg {
+	top: 654px;
+	left: 8px;
+}
+	
+	#petersburg:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+
+/* C4 */
+#wilsonsCreek {
+	top: 111px;
+	left: 589px;
+}
+
+	#wilsonsCreek:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: grey;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+}
+	
+
+#peaRidge {
+	top: 218px;
+	left: 563px;
+}
+
+	#peaRidge:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+
+/* C5 */
+#fortDonelson {
+	top: 112px;
+	left: 645px;
+}
+
+	#fortDonelson:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#stonesRiver {
+	top: 217px;
+	left: 625px;
+}
+
+	#stonesRiver:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#shiloh {
+	top: 324px;
+	left: 406px;
+}
+
+	#shiloh:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#memphis {
+	top: 356px;
+	left: 292px;
+}
+
+	#memphis:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#corinth {
+	top: 409px;
+	left: 424px;
+}
+
+	#corinth:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#vicksburg {
+	top: 686px;
+	left: 213px;
+}
+
+	#vicksburg:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+
+/* C6 */
+#perryville {
+	top: 11px;
+	left: 12px;
+}
+
+	#perryville:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: black;
+		border: 2px solid grey;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#chattanooga {
+	top: 253px;
+	left: 78px;
+}
+
+	#chattanooga:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#chickamauga {
+	top: 334px;
+	left: 41px;
+}
+
+	#chickamauga:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: grey;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#shermansMarch {
+	top: 451px;
+	left: 140px;
+}
+
+	#shermansMarch:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#fortSumter {
+	top: 543px;
+	left: 541px;	
+}
+
+	#fortSumter:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: grey;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+
+
+/* D5 */
+#mobileBay {
+	top: 128px;
+	left: 552px;
+}	
+
+	#mobileBay:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+#newOrleans {
+	top: 210px;
+	left: 388px;
+}
+
+	#newOrleans:hover {
+		width: 35px;
+		height: 35px;
+		border-radius: 17px;
+		background-color: blue;
+		border: 2px solid black;
+		z-index: 1;
+		position: absolute;
+		display: inline;
+	}
+
+
+/* Text about battles */
+#big {
+	text-align: center;
+	font-family: Garamond, sans-serif;
+}
+
+h1 {
+	font-family: Copperplate Gothic Light, sans-serif;
+	margin-bottom: 10px;
+	font-size: 37px;
+}
+
+.showtext {
+	display: none;
+}
+
+table {
+	border: 1px solid black;
+	display: block;
+	margin: auto;
+	width: 450px;
+	table-layout: fixed;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+	width: 33%;
+}
+
+th {
+	border: 1px solid black;
+	text-align: center;
+}
+
+#winchimg {
+	width: 197px;
+	height: 275px;
+	margin: auto;
+}
+
+#brimg {
+	margin: auto;
+	width: 356px;
+	height: 200px;
+}
+
+#apmtximg {
+	height: 120px;
+	width: 272px;
+	margin: auto;
+}
+
+#gbimg {
+	margin: auto;
+	height: 220px;
+	width: 154px;
+}
+
+#antmimg {
+	margin: auto;
+	height: 220px;
+	width: 169px;
+}
+
+#mhimg {
+	margin: auto;
+	height: 210px;
+	width: 157px;
+}
+
+#spvnaimg {
+	margin: auto;
+	height: 160px;
+	width: 207px;
+}
+
+#pbimg {
+	margin: auto;
+	height: 160px;
+	width: 190px;
+}
+
+#wcimg {
+	margin: auto;
+	height: 120px;
+	width: 65px;
+}
+
+#primg {
+	margin: auto;
+	height: 200px;
+	width: 273px;
+}
+
+#fdimg {
+	margin: auto;
+	height: 90px;
+	width: 132px;
+}
+
+#srimg {
+	margin: auto;
+	height: 220px;
+	width: 258px;
+}
+
+#mimg {
+	margin: auto;
+	height: 250px;
+	width: 441px;
+}
+
+#cimg {
+	margin: auto;
+	height: 220px;
+	width: 298px;
+}
+
+#vimg {
+	margin: auto;
+	height: 120px;
+	width: 158px;
+}
+
+#pimg {
+	margin: auto;
+	height: 160px;
+	width: 143px;
+}
+
+#cmimg {
+	margin: auto;
+	height: 140px;
+	width: 128px;
+}
+
+#fsimg {
+	margin: auto;
+	height: 130px;
+	width: 171px;
+}
+
+#mbimg {
+	margin: auto;
+	height: 180px;
+	width: 126px;
+}
+
+#noimg {
+	margin: auto;
+	height: 140px;
+	width: 109px;
+}
+
+
+#patch {
+	background-color: rgb(163, 20, 21);
+	z-index: 1;
+	position: absolute;
+	display: inline;
+	width: 50px;
+	height: 50px;
+	top: 445px;
+	left: 135px;
+}
+
+
+/* English project add-on */
+#returntohome {
+	text-decoration: none;
+	color: black;
+}
+
+#returntohome:hover {
+	font-weight: bold;
+}
+
+#gohome {
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	width: 110px;
+	border-radius: 5px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid black;
+}
+
+

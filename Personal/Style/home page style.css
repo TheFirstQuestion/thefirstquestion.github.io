@@ -1,0 +1,129 @@
+.field {
+	height: 20px;
+	width: 95%;
+	border: 2px solid black;
+	border-radius: 4px;
+	margin: 3px;
+	font-size: 15px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 40px;
+}
+
+#checkListForm {
+    display: inline-block;
+}
+
+#button {
+    display: inline-block;
+    height: 20px;
+	width: 70px;
+	background-color: purple;
+	font-family: arial;
+	font-weight:bold;
+	color: #ffffff;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 2px;
+}
+
+.list {
+	font-family: garamond;
+	color: black;
+}
+
+.item {
+	border-radius: 5px;
+	background-color: rebeccapurple;
+	margin-top: 5px;
+	font-size: 30px;
+	border: 1px solid black;
+}
+
+.xbox {
+	display: inline;
+	margin-right: 20px;
+	color: red;
+	border-radius: 5px;
+	background-color: darkred;
+	text-align: center;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin: 0px;
+	height: 100%;
+	cursor: pointer;
+}
+
+.xbox:hover {
+	color: white;
+}
+
+#TODO {
+	overflow: auto; 
+	margin: 2px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+#wrapper {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#barContainer {
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 20px;
+	float: right;
+}
+
+.boxes {
+	width: 43%; 
+	height: 350px; 
+	border: 3px solid black;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#cs {
+	font-family: 'Courier', sans-serif;
+	font-size: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+#tls {
+	border: 3px solid black;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-height: 250px;
+}
+
+#tlsTitle {
+	font-family: arial;
+    font-size: 35px;
+    margin: 35px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#tls a {
+	font-family: arial;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	margin-left: 50px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+#tls a:hover {
+	text-decoration: underline;
+}

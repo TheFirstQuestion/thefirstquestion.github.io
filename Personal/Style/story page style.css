@@ -1,0 +1,38 @@
+h2 {
+	font-size: 36px;
+	margin: auto;
+	opacity: 1;
+}
+
+p {
+	font-size: 20px;
+	opacity: 1;
+}
+
+#returntohome {
+	text-decoration: none;
+	color: black;
+}
+
+#returntohome:hover {
+	font-weight: bold;
+}
+
+#gohome {
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	width: 110px;
+	border-radius: 5px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid black;
+}
+
+body {
+	background-image: url("../Images/story background 2.jpeg");
+	text-shadow: 1px 1px 3px #888888;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

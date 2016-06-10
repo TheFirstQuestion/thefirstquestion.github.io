@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<title>Verb Game</title>
+	<link type="text/css"; rel="stylesheet"; href="verb game style.css">
+	<script type="text/javascript"; src="verb game script.js"></script>
+</head>
+
+
+<body>
+
+
+<span id="fullVerb">Full Verb Form</span>
+
+<h1 id="verb">Conjugated Verb</h1>
+
+<div id="container">
+
+	<div id="tense" class="choices">
+		<span class="header" id="tenseHead">Tense</span>
+		<form action="">
+			<input type="radio" name="tense" value="present" id="tense1"><span>Present</span><br>
+			<input type="radio" name="tense" value="future" id="tense2"><span>Future</span><br>
+			<input type="radio" name="tense" value="imperfect" id="tense3"><span>Imperfect</span><br>
+			<input type="radio" name="tense" value="perfect" id="tense4"><span>Perfect</span><br>
+			<input type="radio" name="tense" value="pluperfect" id="tense5"><span>Pluperfect</span><br>
+			<input type="radio" name="tense" value="futureperfect" id="tense6"><span>Future Perfect</span>
+		</form>
+	</div>
+	
+	<div id="person" class="choices">
+		<span class="header" id="personHead">Person</span>
+		<form action="">
+			<input type="radio" name="person" value="first" id="person1"><span>First</span><br>
+			<input type="radio" name="person" value="second" id="person2"><span>Second</span><br>
+			<input type="radio" name="person" value="third" id="person3"><span>Third</span>
+		</form>
+	</div>
+	
+	<div id="number" class="choices">
+		<span class="header" id="numberHead">Number</span>
+		<form action="">
+			<input type="radio" name="number" value="singular" id="number1"><span>Singular</span><br>
+			<input type="radio" name="number" value="plural" id="number2"><span>Plural</span>
+		</form>
+	</div>
+	
+	<div id="voice" class="choices">
+		<span class="header" id="voiceHead">Voice</span>
+		<form action="">
+			<input type="radio" name="voice" value="active" id="voice1"><span>Active</span><br>
+			<input type="radio" name="voice" value="passive" id="voice2"><span>Passive</span>
+		</form>
+	</div>
+</div>	
+
+<br><br><br><br>
+
+
+<button onclick="makeAVerb()">Make a Verb!</button>
+<button onclick="check()">Check Answers</button>
+
+</body>
+
+
+</html>

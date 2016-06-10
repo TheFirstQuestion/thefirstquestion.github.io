@@ -1,0 +1,202 @@
+/* map and boxes */
+body {
+	background-color: #638BF3;
+}
+
+img {
+	width: 1350px;
+	height: 828px;
+	z-index: -9999999999;
+	position: absolute;
+	top: 0px;
+	left: 13px;
+}
+
+.box {
+	border: 1px solid black;
+	display: inline-block;
+	height: 200px;
+	width: 185px;
+	margin: 0px;
+	z-index: 1;
+	white-space: nowrap;
+}
+
+.bigbox {
+    width: 100%;
+    z-index: 1;
+    white-space: nowrap;
+    width: 1350px;
+}
+
+#topbigbox {
+	z-index: 1;
+	white-space: nowrap;
+}
+
+.lilbox:hover {
+	border: 1px solid black;
+	margin: 1px;
+	z-index: 1;
+	white-space: nowrap;
+}
+
+.lilbox {
+	display: inline-block;
+	width: 185px;
+	height: 200px;
+	margin: 2px;
+	z-index: 1;
+	white-space: nowrap;
+}
+
+#biggestbox {
+	position: absolute;
+	left: 7px;
+	width: 1350px;
+	white-space: nowrap;
+	margin-right: 0px;
+	top: 10px;
+}
+
+/* Dot color based on who's victory */
+.uwin {
+	border-radius: 4px;
+	width: 8px;
+	height: 8px;
+	background-color: blue;
+	border: 1px solid black;
+}
+
+.cwin {
+	border-radius: 4px;
+	width: 8px;
+	height: 8px;
+	background-color: grey;
+	border: 1px solid black;
+}
+
+.inc {
+	border-radius: 4px;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	border: 1px solid grey;
+}
+
+
+/* individual dot locations. relative to others within the same box */
+#gettysburg {
+	margin-top: 85px;
+	margin-left: 180px;
+}
+
+#antietam {
+	margin-top: 6px;
+	margin-left: 181px;
+}
+
+#bullsRun {
+	margin-top: 13px;
+	margin-left: 165px;
+}
+
+#chancellorsville {
+	margin-top: 5px;
+	margin-left: 175px;
+}
+
+#spotsylvania {
+	margin-top: 8px;
+	margin-left: 183px;
+}
+
+#petersburg {
+	margin-top: 3px;
+	margin-left: 1px;
+}
+
+#appomattox {
+	margin-top: 7px;
+	margin-left: 148px;
+}
+
+#fortSumter {
+	margin-top: 16px;
+	margin-left: 147px;
+}
+
+#chickamauga {
+	margin-top: 13px;
+	margin-left: 10px;
+}
+
+#fortDonelson {
+	margin-top: 30px;
+	margin-left: 178px;
+}
+
+#chattanooga {
+	margin-top: 58px;
+	margin-left: 20px;
+}
+
+#shiloh {
+	margin-top: 20px;
+	margin-left: 110px;
+}
+
+#stonesRiver {
+	margin-left: 170px;
+	margin-top: 20px;
+}
+
+#memphis {
+	margin-top: -1px;
+	margin-left: 79px;
+}
+
+#corinth {
+	margin-top: 5px;
+	margin-left: 115px;
+}
+
+#vicksburg {
+	margin-top: 68px;
+	margin-left: 57px;
+}
+
+#mobileBay {
+	margin-top: 35px;
+	margin-left: 150px;
+}
+
+#newOrleans {
+	margin-top: 13px;
+	margin-left: 105px;
+}
+
+#peaRidge {
+	margin-top: 20px;
+	margin-left: 153px;
+}	
+
+#perryville {
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+#wilsonsCreek {
+	margin-top: 30px;
+	margin-left: 160px;
+}
+
+#malvernHill {
+	margin-top: 170px;
+	margin-left: 13px;
+}
+
+#winchester {
+	margin-top: 3px;
+	margin-left: 160px;
+}
