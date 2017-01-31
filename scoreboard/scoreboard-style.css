@@ -1,0 +1,49 @@
+.student {
+	display: inline-block;
+	margin: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	vertical-align: top;
+	font-size: 20px;
+	position: relative;
+}
+
+.count {
+	margin-top: 10px;
+	font-size: 40px;
+}
+
+.selected {
+	background-color: grey;
+}
+
+.button {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	border: 3px solid black;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 40px;
+	margin-left: 50px;
+}
+
+.wide {
+	width: 100px;
+}
+
+#inputText {
+	margin: 10px;
+	display: inline-block;
+}
+
+button {
+	margin-right: 100px;
+}
+
+a:visited {
+	color: black;
+}

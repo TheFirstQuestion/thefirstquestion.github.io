@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Classroom Scoreboard</title>
+	<link rel="stylesheet" type="text/css" href="scoreboard-style.css">
+</head>
+
+<body>
+
+<div class="button" onclick="compute(1)">+1</div>
+<div class="button" onclick="compute(2)">+2</div>
+<div class="button" onclick="compute(-1)">-1</div>
+<div class="button" onclick="compute(-2)">-2</div>
+<div class="button wide" onclick="computeAll(1)">+1 all</div>
+<div class="button wide" onclick="computeAll(2)">+2 all</div>
+<div class="button wide" onclick="computeAll(-1)">-1 all</div>
+<div class="button wide" onclick="computeAll(-2)">-2 all</div>
+
+<br>
+
+<input name="inputText" type="text" maxlength="512" id="inputText" value="0"/>
+<button onclick="computeCustom()">Add to All</button>
+
+<button id="create" onclick="generateFile()">Share</button>
+<a download="ClassScore.txt" id="downloadlink" style="display: none"">Download</a>
+
+<a href="index.html">Back (current session lost)</a>
+
+
+<br>
+
+
+
+
+<script>
+	function readTextFile(file) {
+	    var rawFile = new XMLHttpRequest();
+	    rawFile.open("GET", file, false);
+	    rawFile.onreadystatechange = function ()
+	    {
+		if(rawFile.readyState === 4)
+		{
+		    if(rawFile.status === 200 || rawFile.status == 0)
+		    {
+		        var allText = rawFile.responseText;
+		        sortText(allText);
+		    }
+		}
+	    }
+	    rawFile.send(null);
+	}
+	
+	function sortText(str) {
+		// Split for newline
+		rows = str.split(/[\n]+/);
+		
+		var names = [];
+		
+		for (i = 0; i < rows.length; i++) {
+			names[i] = rows[i].split('/');
+		}
+		
+		var div;
+		var br;
+		var span;
+		
+		for (j = 0; j < names.length - 1; j++) {
+			for (k = 0; k < names[j].length ; k++) {
+				div = document.createElement("div");
+				div.className = "student";
+				div.innerHTML = names[j][k];
+				div.addEventListener("click", select, false);
+
+				document.body.appendChild(div);
+				
+				span = document.createElement("div");
+				span.className = "count";
+				span.innerHTML = "0";
+				div.appendChild(span);
+			}
+			br = document.createElement("br");
+			document.body.appendChild(br);
+		}
+		
+	}
+	
+	function select() {
+		if (this.className.includes(" selected")) {
+			this.className = "student";
+		} else {
+			this.className += " selected";
+		}
+	}
+	
+	function compute(amount) {
+		var students = document.getElementsByClassName("selected");
+		
+		var original;
+		var current;
+		
+		for (i = 0; i < students.length; i++) {
+			original = parseInt(students[i].children[0].innerHTML);
+			current = original + amount;
+			students[i].children[0].innerHTML = current;
+		}
+		
+		clear();
+	}
+	
+	function clear() {
+		var all = document.getElementsByClassName("student");
+		for (j = 0; j < all.length; j++) {
+			all[j].className = "student";
+		}
+	}
+	
+	function computeAll(amount) {
+		var all = document.getElementsByClassName("student");
+		
+		var original;
+		var current;
+		
+		for (j = 0; j < all.length; j++) {
+			original = parseInt(all[j].children[0].innerHTML);
+			current = original + amount;
+			all[j].children[0].innerHTML = current;
+		}
+	}
+	
+	function computeCustom() {
+		var input = document.getElementById("inputText").value;
+		var amount = parseInt(input);
+		computeAll(amount);
+	}
+	
+	function generateFile() {
+		var fileText = "";
+		var emailText = "";
+		var all = document.getElementsByClassName("student");
+		
+		var score;
+		var name;
+		
+		for (j = 0; j < all.length; j++) {
+			name = all[j].innerHTML.split("<")[0];
+			score = parseInt(all[j].children[0].innerHTML);
+			emailText += name + "," + score + "%0D%0A";  // for email
+			fileText += name + "," + score + "\n"; // for file
+		}
+		
+		var link = document.getElementById('downloadlink');
+    		link.href = makeFile(fileText);
+    		link.download = "ClassScore " + new Date().toLocaleDateString();
+    		//console.log(text);
+    		sendEmail(emailText);
+    		link.style.display = 'inline';
+	}
+	
+	function makeFile(text) {
+		var data = new Blob([text], {type: 'text/plain'});
+		return window.URL.createObjectURL(data);
+	}
+	
+	function sendEmail(text) {
+		window.open('mailto:sophieopfeman6@gmail.com?subject=Classroom\ Scoreboard\ ' + new Date().toLocaleDateString() + '&body=' + text);
+
+	}
+	
+	function getParam(name, w) {
+		// Gets the file name from the url
+		w = w || window;
+		var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+			val = w.location.search.match(rx);
+		return !val ? '':val[1];
+	}
+	
+	
+	
+	readTextFile(getParam("class"));
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
