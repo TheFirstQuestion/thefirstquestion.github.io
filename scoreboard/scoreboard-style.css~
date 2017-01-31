@@ -28,7 +28,7 @@
 	border-radius: 8px;
 	text-align: center;
 	font-size: 40px;
-	margin-left: 30px;
+	margin-left: 50px;
 }
 
 .wide {
