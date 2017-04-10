@@ -9,6 +9,14 @@
 	vertical-align: top;
 	font-size: 20px;
 	position: relative;
+	cursor: pointer;
+	background-color: rgba(1, 100, 500, 0.1);
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .count {
@@ -17,7 +25,7 @@
 }
 
 .selected {
-	background-color: grey;
+	background-color: rgba(1, 100, 500, 0.5);
 }
 
 .button {
@@ -29,6 +37,14 @@
 	text-align: center;
 	font-size: 40px;
 	margin-left: 30px;
+	cursor: pointer;
+	background-color: rgba(50, 1, 1, 0.1);
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .wide {
