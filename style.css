@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+	font-size: 55px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h3 a {
+	text-decoration: none;
+	color: #f7f052;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+	margin: 5px 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+}
+
+
+
+
+/**************** Slides ****************************/
+.slide {
+	width: 100%;
+	margin: 0;
+	padding: 100px 0 130px 0;
+	overflow: hidden;
+	background-size: cover;
+	min-height: 400px;
+}
+
+#slide1 {
+	background-color: #7b1e7a;
+	padding-top: 160px;
+	height: 350px;
+}
+
+#slide2 {
+	background-color: #0285d1;
+}
+
+#slide3 {
+	background-color: #46af69;
+}
+
+#slide4 {
+	background-color: #f7f052;
+}
+
+#slide5 {
+	background-color: #fe4a49;
+	padding-bottom: 0;
+}
+
+/****************** Comic Panels *********************/
+.comic {
+	width: 300px;
+	margin-left: calc(50% - (300px / 2));
+	margin-top: 50px;
+}
+
+/*********************** Copyright *******************/
+#copyright {
+	font-size: 16px;
+	margin-top: 80px;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+#copyright a {
+	text-decoration: none;
+	color: white;
+}
