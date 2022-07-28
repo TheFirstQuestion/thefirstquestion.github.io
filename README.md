@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+# Steven G. Opferman | steven.g.opferman@gmail.com
+# My personal template for README.md files, because I'm lazy :P
+# Adapted from:
+#   https://github.com/othneildrew/Best-README-Template/
+#   https://github.com/kylelobo/The-Documentation-Compendium/
+-->
 
-## Available Scripts
+<!--
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
+-->
 
-In the project directory, you can run:
+<h1 align="center">Project Title</h1>
 
-### `npm start`
+<!--
+The cute little icon things.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-### `npm test`
+</div>
+-->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+Few lines describing your project.
+<br>
+</p>
 
-### `npm run build`
+## Table of Contents
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [About](#about)
+- [Usage](#usage)
+- [Getting Started](#getting_started)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## About <a name="about"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Write about a paragraph describing the purpose of your project.
 
-### `npm run eject`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage <a name="usage"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Learn More
+## Getting Started <a name="getting_started"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+These instructions will get you a copy of the project up and running.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+The things you need to use the software and how to install them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repo
 
-### Making a Progressive Web App
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Install NPM packages
 
-### Advanced Configuration
+   ```sh
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Enter your API in `config.js`
 
-### Deployment
+   ```js
+   const API_KEY = "ENTER YOUR API";
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build` fails to minify
+## Roadmap <a name="roadmap"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+  - [ ] Nested Feature
+
+<!--
+See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+-->
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contributing <a name="contributing"></a>
+
+Collaboration is what makes the world such an amazing place to learn, inspire, and create. **Any contributions or suggestions you make are greatly appreciated!**
+
+Feel free to do any of the following:
+
+- send me an [email](mailto:steven.g.opferman@gmail.com)
+- open an issue with the tag "enhancement"
+- fork the repo and create a pull request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Acknowledgements <a name="acknowledgements"></a>
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
+
+<p align="right">(<a href="#top">back to top</a>)</p>
