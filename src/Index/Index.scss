@@ -1,0 +1,15 @@
+@import "../styles/variables";
+
+.index {
+  h1 {
+    font-size: 80px;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: $h3-font-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

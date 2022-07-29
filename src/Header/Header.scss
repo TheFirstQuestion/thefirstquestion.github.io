@@ -1,9 +1,42 @@
 @import "../styles/variables";
+@import "/node_modules/bootstrap/scss/functions";
 
-.active {
-  color: lime;
+.navbar {
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 25px 25px 55px 5px/5px 55px 25px 25px;
+  &.bg-light {
+    border-color: $gray-800;
+  }
+
+  a {
+    color: $blue;
+    &:hover {
+      color: shade-color($blue, 30%);
+    }
+
+    &.active {
+      color: $red !important;
+      &:hover {
+        color: shade-color($red, 30%);
+      }
+    }
+  }
+
+  .navbar-nav {
+    * {
+      margin-left: 1rem;
+    }
+    .btn {
+      color: white;
+    }
+  }
+
+  .navbar-brand {
+    font-style: italic;
+  }
 }
 
-.nav-link {
-  color: yellow;
+.mainContent {
+  padding-top: 30px;
 }
