@@ -6,14 +6,14 @@ import photo from "../images/balloons.png";
 
 export default function Index(props) {
   return (
-    <Row className="index" xs={12}>
-      <Col xs={5}>
+    <Row className="index d-flex align-items-center" xs={12}>
+      <Col md={5} xs={7}>
         <img
           src={photo}
-          alt="Me in a red and blue striped shirt and white baseball cap, holding red and blue balloons."
+          alt="Me in a red and blue striped shirt and white baseball cap, holding red and blue balloons and grinning broadly."
         />
       </Col>
-      <Col className="d-grid gap-5 text-center" xs={7}>
+      <Col md={7} xs={5} className="d-grid gap-5">
         <div>
           <h1>Steven G. Opferman</h1>
           <em>(the G stands for "gives great hugs")</em>
@@ -21,7 +21,6 @@ export default function Index(props) {
 
         <Button
           variant="secondary"
-          size="lg"
           target="_blank"
           rel="noopener noreferrer"
           href=""
@@ -31,7 +30,6 @@ export default function Index(props) {
 
         <Button
           variant="outline-dark"
-          size="lg"
           target="_blank"
           rel="noopener noreferrer"
           href="mailto:steven.g.opferman@gmail.com?subject=%5BFrom%20Website%5D&body=This%20is%20me%2C%20hacking%20your%20email!%0D%0A%0D%0A(Not%20really.)"
@@ -41,7 +39,6 @@ export default function Index(props) {
 
         <Button
           variant="primary"
-          size="lg"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/TheFirstQuestion"
