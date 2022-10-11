@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -7,14 +6,14 @@ import photo from "../images/balloons.png";
 
 export default function Index(props) {
   return (
-    <Row className="index">
-      <Col>
+    <Row className="index" xs={12}>
+      <Col xs={5}>
         <img
           src={photo}
           alt="Me in a red and blue striped shirt and white baseball cap, holding red and blue balloons."
         />
       </Col>
-      <Col xs="auto" className="d-grid gap-5 text-center">
+      <Col className="d-grid gap-5 text-center" xs={7}>
         <div>
           <h1>Steven G. Opferman</h1>
           <em>(the G stands for "gives great hugs")</em>
@@ -25,7 +24,7 @@ export default function Index(props) {
           size="lg"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/TheFirstQuestion"
+          href=""
         >
           RESUME
         </Button>

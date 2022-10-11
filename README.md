@@ -67,6 +67,7 @@ These instructions will get you a copy of the project up and running.
 The things you need to use the software and how to install them.
 
 - npm
+
   ```sh
   npm install npm@latest -g
   ```
