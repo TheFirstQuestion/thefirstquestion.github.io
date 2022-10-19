@@ -23,7 +23,7 @@ export default function Index(props) {
           variant="secondary"
           target="_blank"
           rel="noopener noreferrer"
-          href=""
+          href="https://docs.google.com/document/d/1zUJHodgRzxkTdgYNceWAIuj7CKc5W_8NS2i5JBEot8o/edit?usp=sharing"
         >
           RESUME
         </Button>
