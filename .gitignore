@@ -4,6 +4,18 @@
 # Delete irrelevant entries as appropriate
 ####################################################################
 
+
+########################### Common Credential Filenames ###########################
+token.json
+credentials.json
+*secret*.json
+
+
+########################### VS Code ###########################
+*.code-workspace
+.vscode/
+
+
 ########################### Node ###########################
 # Optional npm cache directory
 .npm/
@@ -15,6 +27,7 @@ node_modules/
 compiled/
 # Expo (React Native)
 .expo/
+
 
 ############################## Create React App #############################
 # dependencies
@@ -43,11 +56,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 ########################## SASS ##########################
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
 
 ########################## Jupyter Notebooks ##########################
 .ipynb_checkpoints
@@ -55,6 +70,7 @@ __pycache__/
 # IPython
 profile_default/
 ipython_config.py
+
 
 ########################## Android ##########################
 # Local configuration file (sdk path, etc)
@@ -67,13 +83,16 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 google-services.json
 
+
 ########################## Java ##########################
 # Compiled class file
 *.class
 
+
 ########################## C++ ##########################
 # Compiled file
 *.o
+
 
 ##################################################################################################################
 # The below are pretty universal, so you probably want to keep them for all projects.
@@ -93,6 +112,7 @@ google-services.json
 
 ########################## Linux ##########################
 *~
+*.~lock.*
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
 # Linux trash folder which might appear on any partition or disk
@@ -100,9 +120,11 @@ google-services.json
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+
 ########################## macOS ##########################
 # General
 .DS_Store
+__MACOSX/
 .AppleDouble
 .LSOverride
 # Thumbnails
