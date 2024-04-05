@@ -5,15 +5,19 @@ export default function HomePage({ props }) {
 	return (
 		<div className="row">
 			<div className="col-md-5">
-				<img src="img/balloons.png" alt="Balloons" className="img-fluid" />
+				<img
+					src="img/balloons.png"
+					alt="Steven, a white boy with short brown hair and black glasses. He's wearing a white baseball cap and wearing a blue and red striped rugby shirt with a white collar. He's holding a bunch of blue and red balloons and smiling broadly."
+					className="img-fluid"
+				/>
 			</div>
 
 			<div className="col-md-7 d-inline-flex flex-column justify-content-between text-center">
 				<div>
-					<h1 className="display-1">Steven G. Opferman</h1>
-					<em className="text-muted display-6">
-						(the G stands for "gives great hugs")
-					</em>
+					<h1 className="display-2">Steven G. Opferman</h1>
+					<h2 className="text-muted display-6">
+						<em>(the G stands for "gives great hugs")</em>
+					</h2>
 				</div>
 
 				<p className="fs-4">Amateur hero. Professional goof. Here to help.</p>

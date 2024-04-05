@@ -9,12 +9,11 @@
 // Sketchy 5.0.1
 // Bootswatch
 
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&family=Sue+Ellen+Francisco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 //
 // Color system
 //
-
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #f7f7f9 !default;
@@ -59,14 +58,6 @@ $border-width: 2px !default;
 $border-radius: 25px !default;
 $border-radius-lg: 35px !default;
 $border-radius-sm: 15px !default;
-
-// Fonts
-
-// stylelint-disable-next-line value-keyword-case
-$font-family-sans-serif: "Sue Ellen Francisco", -apple-system, system-ui,
-	BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-weight-base: 700 !default;
-$headings-font-family: "Fredericka the Great", cursive;
 
 $blockquote-small-color: $gray-800 !default;
 
@@ -468,10 +459,10 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+$link-color: $primary;
 $link-decoration: underline !default;
-$link-shade-percentage: 50% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-shade-percentage: 30%;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -595,10 +586,12 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Sue Ellen Francisco", -apple-system, system-ui,
+$headings-font-family: "Grandstander", cursive;
+$font-family-sans-serif: "Edu NSW ACT Foundation", -apple-system, system-ui,
 	BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 	"Liberation Mono", "Courier New", monospace !default;
+
 // stylelint-enable value-keyword-case
 $font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
 $font-family-code: var(--#{$variable-prefix}font-monospace) !default;
@@ -606,7 +599,7 @@ $font-family-code: var(--#{$variable-prefix}font-monospace) !default;
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
 $font-size-root: null !default;
-$font-size-base: 1.4rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1.5rem;
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -1119,11 +1112,11 @@ $zindex-tooltip: 1080 !default;
 
 // scss-docs-start nav-variables
 $nav-link-padding-y: 0.5rem !default;
-$nav-link-padding-x: $font-size-base * 1.2 !default;
-$nav-link-font-size: $font-size-base * 1.2 !default;
+$nav-link-padding-x: $font-size-base * 1.2;
+$nav-link-font-size: $font-size-base * 1.4;
 $nav-link-font-weight: null !default;
 $nav-link-color: $link-color !default;
-$nav-link-hover-color: $link-hover-color !default;
+$nav-link-hover-color: $link-hover-color;
 $nav-link-transition: color 0.15s ease-in-out,
 	background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: $gray-600 !default;
@@ -1149,7 +1142,7 @@ $navbar-padding-x: null !default;
 
 $navbar-nav-link-padding-x: 0.5rem !default;
 
-$navbar-brand-font-size: $font-size-lg + 1;
+$navbar-brand-font-size: $font-size-lg + 1.5;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
 $navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
@@ -1179,7 +1172,7 @@ $navbar-light-disabled-color: rgba($black, 0.3) !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba($black, 0.1) !default;
 
-$navbar-light-brand-color: $navbar-light-active-color !default;
+$navbar-light-brand-color: $navbar-light-active-color;
 $navbar-light-brand-hover-color: $navbar-light-active-color !default;
 $navbar-dark-brand-color: $navbar-dark-active-color !default;
 $navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
@@ -1719,11 +1712,6 @@ $pre-color: null !default;
 
 // Variables
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch&display=swap" !default;
-@if $web-font-path {
-	@import url($web-font-path);
-}
-
 // stylelint-disable scss/dollar-variable-default
 $border-radius-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 $border-radius-lg-sketchy: 55px 225px 15px 25px / 25px 25px 35px 355px;
@@ -1736,10 +1724,7 @@ $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 	border-width: 4px;
 	border-style: solid;
 	border-radius: 25px 25px 55px 5px/5px 55px 25px 25px;
-
-	&.bg-light {
-		border-color: $gray-800;
-	}
+	border-color: $gray-700;
 
 	&.fixed-top {
 		border-radius: 0 25px 225px 0/25px 0 25px 255px;
@@ -1753,8 +1738,15 @@ $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 
 	&-brand {
 		font-family: $headings-font-family;
-		font-weight: 400;
+		font-weight: 700;
 		text-decoration: none;
+		color: $secondary;
+
+		&:hover {
+			// Same function as all links use
+			color: shift-color($secondary, $link-shade-percentage);
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -2028,6 +2020,15 @@ select.form-control {
 
 .nav-pills .nav-link {
 	border-radius: $border-radius-sketchy;
+}
+
+.nav-item {
+	padding-right: $nav-link-font-size * 0.7;
+	font-weight: 500;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .nav-link,
