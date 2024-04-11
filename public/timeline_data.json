@@ -1,0 +1,103 @@
+[
+	{
+		"title": "GPTeach: Interactive TA Training with GPT Based Students",
+		"description": "Julia M. Markel, Steven G. Opferman, James A. Landay, Chris Piech. GPTeach: Interactive TA Training with GPT Based Students. ACM Conference on Learning at Scale, 2023.<br><br>Interactive and realistic teacher training is hard to scale. What if we could make the teacher training experience more engaging and, as a downstream effect, reduce the potential for harm that teachers-in-training could inflict on students? We present GPTeach, an interactive chat-based teacher training tool that allows novice teachers to practice with simulated students. We performed two studies to evaluate GPTeach, and in this paper, we provide quantitative results and qualitative observations to inform future work in this area.",
+		"date": "2023-07-20",
+		"files": [
+			{
+				"name": "PDF",
+				"path": "/files/GPTeach_LearningAtScale.pdf"
+			}
+		],
+		"links": [
+			{
+				"name": "ACM Digital Library",
+				"url": "https://doi.org/10.1145/3573051.3593393"
+			}
+		],
+		"tags": ["research", "papers"]
+	},
+	{
+		"title": "Eli's Places: College Football's Fantastic Finishes (Ep. 9)",
+		"description": "Eli Manning and ESPN+ invited members of the LSJUMB to discuss, analyze, and reenact <a href='https://www.youtube.com/watch?v=mfebpLfAt8g'>The Play</a>.",
+		"photos": [
+			{
+				"url": "https://s.secure.espncdn.com/stitcher/artwork/16x9.jpg?height=720&width=1280&source=https%3A%2F%2Fartwork.espncdn.com%2Fmedia%2F15373f97-3d07-41d2-b473-850bc104f0f7%2F16x9%2F1280x720_20211026184001.jpg&cb=12&templateId=espn.core.dtc.large.16x9.1&showBadge=true&package=ESPN_PLUS",
+				"alt": "Promotional image from ESPN"
+			},
+			{
+				"url": "/img/eli-manning.JPG",
+				"alt": "Eli Manning and the LSJUMB"
+			}
+		],
+		"links": [
+			{
+				"name": "watch on ESPN+",
+				"url": "https://www.espn.com/watch/player/_/id/15373f97-3d07-41d2-b473-850bc104f0f7#bucketId=2"
+			}
+		],
+		"tags": ["LSJUMB", "just plain cool"]
+	},
+	{
+		"title": "All About That Bass",
+		"description": "As an audition for a virtual musical, I used the list of instruments to arrange, perform, and produce my own take on Meghan Trainor's 'All About That Bass.'",
+		"videos": [
+			"https://drive.google.com/file/d/1MpVZEVOE3GQzlXibkX2RUJAa87owTmRu/preview"
+		],
+		"tags": ["music", "performing"]
+	},
+	{
+		"title": "Volunteer Notetaker",
+		"description": "At Stanford, some disability accomodations give a student access to notes taken by other students, for whatever reason. My job is then to take and upload neat and comprehensive notes for each class session. You're not supposed to know who is getting the accomodations, but one time a classmate told me they really like the way I take notes, so...",
+		"tags": ["volunteering"]
+	},
+	{
+		"title": "Peer Technology Specialist",
+		"description": "For a short time, I worked at a help desk, diagnosing software, hardware, and networking problems for students and Stanford affiliates. And then we got sent home for COVID, which made that really hard. But it was interesting while it lasted!",
+		"tags": ["work experience", "tech"]
+	},
+	{
+		"title": "Server",
+		"description": "<em>(Not to be confused with the type of computer with the same name.)</em><br><br>The summer after graduating high school, I got a job in the dining room of the senior living facility where my grandparents lived. It was really fun, I learned a lot, and I got to know a bunch of really cool people.",
+		"tags": ["work experience", "old people"]
+	},
+	{
+		"title": "Concierge",
+		"description": "I took time off from school during the pandemic, and one of the things I did was work as a concierge (read: receptionist with extra credit) in an old folks' home. It was so fun to get to be so involved with my residents, and to have the opportunity to do lots of little things to improve the lives of residents, staff, and family members alike.<br><br>Because of the work I did screening visitors and tracking vaccinations, I was also technically known as the 'Infection Control Specialist,' which is a cool and fun title.",
+		"photos": [
+			{
+				"url": "/img/clearwater.png",
+				"alt": "Me with one of my residents"
+			}
+		],
+		"tags": ["work experience", "old people"]
+	},
+	{
+		"title": "Axis o' Rhythm",
+		"description": "As the section leader for ABF Drumz, I got to play the biggest, funnest drum. I taught drum lessons and led rehearsals, did a bunch of composing, arranging, and transcribing, and organized all our equipment. More importantly, I got to foster community for my sectionees, watch friendships form and flourish between new and returning members, and advocate for the interests and concerns of my section members in staff, leadership, and director meetings.",
+		"photos": [
+			{
+				"url": "/img/stuff-solo.JPG",
+				"alt": "Me playing a drum solo"
+			}
+		],
+		"tags": ["music", "leadership", "LSJUMB"]
+	},
+	{
+		"title": "External Relationz",
+		"description": "During the pandemic, the LSJUMB overhauled its membership, staff, and leadership structure, in addition to replacing its entire suite of governing documents and processes. I co-chaired the committee in charge of this process, had a hand in deciding most policies, and wrote significant portions of the new governing documents, in addition to my nominal task of interfacing with alums, other student groups, and any other outside parties interested in the Band.",
+		"tags": ["leadership", "LSJUMB"]
+	},
+	{
+		"title": "The Time I Was Iron Man",
+		"description": "For a football game, the section leaders dressed up as the Avengers. I got to be Iron Man, a role I took very seriously: I designed and built my own arc reactor. It's dope as hell.",
+		"photos": [
+			{
+				"url": "/img/arc-reactor.png",
+				"alt": "My arc reactor"
+			}
+		],
+		"videos": ["/vids/iron-man-thanos.mp4"],
+		"tags": ["just plain cool", "LSJUMB"]
+	}
+]

@@ -28,7 +28,7 @@ export default function Navbar({ props }) {
 						</Link>
 					</li>
 
-					<li className="nav-item">
+					{/* <li className="nav-item">
 						<Link className="nav-link" to="/hero-things">
 							Hero Things
 						</Link>
@@ -38,7 +38,7 @@ export default function Navbar({ props }) {
 						<Link className="nav-link" to="/random">
 							Random
 						</Link>
-					</li>
+					</li> */}
 
 					<li className="nav-item">
 						<Link className="nav-link" to="/resources">
