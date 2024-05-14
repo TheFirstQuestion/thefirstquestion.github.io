@@ -810,9 +810,9 @@ $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity: 0.65 !default;
 $btn-active-box-shadow: inset 0 3px 5px rgba($black, 0.125) !default;
 
-$btn-link-color: $link-color !default;
+$btn-link-color: $white;
 
-$btn-link-hover-color: $link-hover-color !default;
+$btn-link-hover-color: $black;
 $btn-link-disabled-color: $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
@@ -2042,6 +2042,12 @@ select.form-control {
 	.nav-link {
 		border-radius: 45px 15px 225px 5px/25px 225px 25px 255px;
 	}
+}
+
+// Contact button in navbar
+.nav-link.btn-warning {
+	color: $gray-700;
+	font-weight: 500;
 }
 
 .breadcrumb {

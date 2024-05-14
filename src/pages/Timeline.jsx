@@ -31,7 +31,7 @@ export default function Timeline({ props }) {
 					<Card.Text>
 						<em>
 							If you just want the standard, less-cool,
-							not-as-fun-but-fits-on-one-page version,
+							not-as-fun-but-fits-on-one-page version,{" "}
 							<a href="#" rel="noreferrer noopener" target="_blank">
 								here it is
 							</a>

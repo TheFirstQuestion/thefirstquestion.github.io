@@ -47,7 +47,7 @@ export default function Navbar({ props }) {
 					</li>
 				</ul>
 
-				<Link to="/contact" className="nav-link btn btn-dark ms-3">
+				<Link to="/contact" className="nav-link btn btn-warning ms-3">
 					Contact
 				</Link>
 			</div>
