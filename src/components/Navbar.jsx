@@ -1,56 +1,54 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Navbar as BaseNavbar, Nav } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar({ props }) {
+	const [isExpanded, setExpanded] = useState(false);
+	const location = useLocation();
+
+	function toggle() {
+		setExpanded(!isExpanded);
+	}
+
+	// Automatically collapse the navbar when the user has clicked on a link
+	useEffect(() => {
+		setExpanded(false);
+	}, [location]);
+
 	return (
-		<nav className="navbar navbar-expand-lg navbar-scroll m-2 px-5 d-flex flex-row justify-content-center align-items-space-between">
-			<Link className="navbar-brand" to="/">
+		<BaseNavbar
+			expand="lg"
+			expanded={isExpanded}
+			className="m-2 d-flex justify-content-between"
+		>
+			<BaseNavbar.Brand as={Link} to="/">
 				Steven G. Opferman
-			</Link>
+			</BaseNavbar.Brand>
 
-			<button
-				className="navbar-toggler"
-				type="button"
-				data-mdb-toggle="collapse"
-				data-mdb-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
+			<BaseNavbar.Toggle
+				aria-controls="responsive-navbar-nav"
+				className="ml-auto"
+				onClick={toggle}
+			/>
+
+			<BaseNavbar.Collapse
+				id="responsive-navbar-nav"
+				className="align-items-center justify-content-end"
 			>
-				<i className="fas fa-bars"></i>
-			</button>
+				<Nav>
+					<Nav.Link as={Link} to="/timeline">
+						Things I've Done
+					</Nav.Link>
 
-			<div className="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul className="navbar-nav ms-auto">
-					<li className="nav-item">
-						<Link className="nav-link" to="/timeline">
-							Things I've Done
-						</Link>
-					</li>
+					<Nav.Link as={Link} to="/resources">
+						Resources
+					</Nav.Link>
 
-					{/* <li className="nav-item">
-						<Link className="nav-link" to="/hero-things">
-							Hero Things
-						</Link>
-					</li>
-
-					<li className="nav-item">
-						<Link className="nav-link" to="/random">
-							Random
-						</Link>
-					</li> */}
-
-					<li className="nav-item">
-						<Link className="nav-link" to="/resources">
-							Resources
-						</Link>
-					</li>
-				</ul>
-
-				<Link to="/contact" className="nav-link btn btn-warning ms-3">
-					Contact
-				</Link>
-			</div>
-		</nav>
+					<Nav.Link as={Link} to="/contact" className="btn btn-warning">
+						Contact
+					</Nav.Link>
+				</Nav>
+			</BaseNavbar.Collapse>
+		</BaseNavbar>
 	);
 }

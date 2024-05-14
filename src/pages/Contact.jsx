@@ -33,6 +33,7 @@ export default function Contact({ props }) {
 						.
 					</p>
 
+					{/* TODO: make this a grid with icons in rounded boxes */}
 					<h2>What I'm Up To</h2>
 					<p>You can check out what I'm doing these days at the following:</p>
 					<ul>
@@ -72,13 +73,12 @@ export default function Contact({ props }) {
 								Goodreads
 							</LinkNewTab>{" "}
 							for what books I'm reading
+							{/* TODO: make this responsive */}
 							<div>
 								<iframe
 									title="Goodreads Updates"
 									sandbox
-									src="https://goodreads.com/widgets/user_update_widget?height=400&num_updates=10&user=94637917&width=500"
-									width="500"
-									height="330"
+									src="https://goodreads.com/widgets/user_update_widget?height=400&num_updates=10&user=94637917"
 									frameborder="0"
 								/>
 							</div>
