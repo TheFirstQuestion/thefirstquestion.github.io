@@ -504,7 +504,7 @@ $container-max-widths: (
 	lg: 960px,
 	xl: 1140px,
 	xxl: 1320px,
-) !default;
+);
 // scss-docs-end container-max-widths
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -514,7 +514,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.5rem !default;
+$grid-gutter-width: 4rem;
 $grid-row-columns: 6 !default;
 
 $gutters: $spacers !default;
@@ -599,7 +599,7 @@ $font-family-code: var(--#{$variable-prefix}font-monospace) !default;
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
 $font-size-root: null !default;
-$font-size-base: 1.5rem;
+$font-size-base: 2rem;
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -661,7 +661,7 @@ $display-line-height: $headings-line-height !default;
 $lead-font-size: $font-size-base * 1.25 !default;
 $lead-font-weight: 300 !default;
 
-$small-font-size: 0.875em !default;
+$small-font-size: 0.75em;
 
 $sub-sup-font-size: 0.75em !default;
 
@@ -669,12 +669,12 @@ $text-muted: $gray-600 !default;
 
 $initialism-font-size: $small-font-size !default;
 
-$blockquote-margin-y: $spacer !default;
+$blockquote-margin-y: $spacer - 0.2rem;
 $blockquote-font-size: $font-size-base * 1.25 !default;
 $blockquote-footer-color: $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
-$hr-margin-y: $spacer !default;
+$hr-margin-y: $spacer * 3;
 $hr-color: inherit !default;
 $hr-height: $border-width !default;
 $hr-opacity: 0.25 !default;
@@ -1113,7 +1113,7 @@ $zindex-tooltip: 1080 !default;
 // scss-docs-start nav-variables
 $nav-link-padding-y: 0.5rem !default;
 $nav-link-padding-x: $font-size-base * 1.2;
-$nav-link-font-size: $font-size-base * 1.4;
+$nav-link-font-size: $font-size-base * 1.2;
 $nav-link-font-weight: null !default;
 $nav-link-color: $link-color !default;
 $nav-link-hover-color: $link-hover-color;
@@ -1142,7 +1142,7 @@ $navbar-padding-x: null !default;
 
 $navbar-nav-link-padding-x: 0.5rem !default;
 
-$navbar-brand-font-size: $font-size-lg + 1.5;
+$navbar-brand-font-size: $font-size-lg + 1;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
 $navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
@@ -2061,6 +2061,20 @@ select.form-control {
 	}
 }
 
+// Blockquotes
+blockquote.blockquote {
+	border-left: 2px solid $gray-400;
+	padding: 1em;
+	background-color: $yellow-100;
+	font-family: "Special Elite", monospace;
+	font-size: 0.8em;
+	line-height: 1.2em;
+
+	footer.blockquote-footer {
+		margin-left: 1em;
+	}
+}
+
 // Indicators
 
 .badge {
@@ -2191,4 +2205,31 @@ pre {
 		border-radius: $border-radius-sketchy;
 	}
 }
+
+// Adjust margins of main content
+#pageContent.container {
+	margin: auto;
+	min-width: calc(100vw - 12rem);
+
+	:first-child {
+		margin-top: 0.2rem;
+	}
+}
+
+// + is the adjacent sibling selector
+#pageContent p + ul {
+	margin-left: 1rem;
+}
+
+// Headings beyond the first get more top margin
+h1:not(:first-child),
+// Except if it's a sort of subtitle-y thing
+h2:not(:first-child):not(.text-muted),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+	margin-top: 4rem;
+}
+
 // custom-theme-end

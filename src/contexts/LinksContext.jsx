@@ -19,4 +19,5 @@ const LinksProvider = ({ children }) => {
 	);
 };
 
+export default LinksContext;
 export { LinksProvider, LinksContext };

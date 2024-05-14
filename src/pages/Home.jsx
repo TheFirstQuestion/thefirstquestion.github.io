@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { LinksContext } from "../contexts/LinksContext";
+import LinkNewTab from "../components/Link";
+import LinksContext from "../contexts/LinksContext";
 
 export default function HomePage({ props }) {
 	const { links } = useContext(LinksContext);
@@ -44,14 +44,12 @@ export default function HomePage({ props }) {
 						<span className="fs-3">steven.g.opferman@gmail.com</span>
 					</a>
 
-					<Link
+					<LinkNewTab
 						to={links.github}
 						className="btn btn-primary btn-lg btn-block fs-3"
-						target="_blank"
-						rel="noopener noreferrer"
 					>
 						GITHUB
-					</Link>
+					</LinkNewTab>
 				</div>
 			</div>
 		</div>
