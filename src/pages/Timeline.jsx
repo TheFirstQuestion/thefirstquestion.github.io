@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Button, Card, Carousel } from "react-bootstrap";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "../style/carousel.css";
 import LinkNewTab from "../components/LinkNewTab";
 import { LinksContext } from "../contexts/LinksContext";
@@ -55,11 +56,16 @@ export default function Timeline({ props }) {
 				</Card.Footer> */}
 			</Card>
 
-			<div>
-				{data.map((item, index) => (
-					<ItemCard item={item} key={index} />
-				))}
-			</div>
+			<ResponsiveMasonry
+				columnsCountBreakPoints={{ 350: 1, 1000: 2, 1400: 3 }}
+				gutter="1rem"
+			>
+				<Masonry>
+					{data.map((item, index) => (
+						<ItemCard item={item} key={index} />
+					))}
+				</Masonry>
+			</ResponsiveMasonry>
 		</>
 	);
 }
@@ -95,17 +101,17 @@ const ItemCard = ({ item, index }) => {
 		});
 	}
 
+	// The cards
 	return (
-		<Card
-			className="d-inline-block"
-			key={index}
-			style={{
-				maxWidth: "33%",
-			}}
-		>
+		<Card className="d-inline-block" key={index} style={{ margin: "1rem" }}>
+			{/* TODO: equally space these vertically */}
 			<Card.Body>
 				<Card.Title>{item.title}</Card.Title>
-				{item.date && <Card.Text>Date: {item.date}</Card.Text>}
+
+				{/* TODO: humanize the dates, right-align? */}
+				{item.date && (
+					<Card.Text className="text-muted small">Date: {item.date}</Card.Text>
+				)}
 
 				<div className="text-center" style={{ width: "100%" }}>
 					<MediaCarousel entries={combinedItems} />
@@ -121,7 +127,7 @@ const ItemCard = ({ item, index }) => {
 							href={link.url}
 							rel="noreferrer noopener"
 							target="_blank"
-							variant="primary"
+							variant="outline-primary"
 						>
 							{link.name}
 						</Button>
@@ -132,7 +138,7 @@ const ItemCard = ({ item, index }) => {
 						<Button
 							key={index}
 							href={file.path}
-							variant="warning"
+							variant="outline-secondary"
 							rel="noreferrer noopener"
 							target="_blank"
 						>
@@ -141,7 +147,7 @@ const ItemCard = ({ item, index }) => {
 					))}
 				</div>
 
-				<ul className="card-footer text-muted fst-italic mb-0 pb-0 mt-1">
+				<ul className="card-footer text-muted fst-italic mb-0 pb-0 mt-4">
 					Tags:
 					{item.tags?.map((tag, index) => {
 						if (index === 0) {
@@ -157,38 +163,6 @@ const ItemCard = ({ item, index }) => {
 };
 
 const MediaCarousel = ({ entries }) => {
-	// State variables to track max dimensions
-	const [maxHeight, setMaxHeight] = useState(0);
-	const [maxWidth, setMaxWidth] = useState(0);
-
-	// Calculate max dimensions on mount or when entries change
-	useEffect(() => {
-		// Function to preload images and extract dimensions
-		const preloadImages = async () => {
-			let maxEntryHeight = 0;
-			let maxEntryWidth = 0;
-
-			// Loop through each entry to preload images and extract dimensions
-			for (const entry of entries) {
-				if (entry.type === "image") {
-					const img = new Image();
-					img.src = entry.item.url;
-					await img.decode(); // Wait for the image to load and decode
-
-					// Update max dimensions
-					maxEntryHeight = Math.max(maxEntryHeight, img.height);
-					maxEntryWidth = Math.max(maxEntryWidth, img.width);
-				}
-			}
-
-			// Set max dimensions
-			setMaxHeight(maxEntryHeight);
-			setMaxWidth(maxEntryWidth);
-		};
-
-		preloadImages();
-	}, [entries]);
-
 	// Do not render if there are no entries
 	if (!entries || entries.length === 0) {
 		return <></>;
