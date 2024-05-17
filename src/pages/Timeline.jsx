@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import { Button, Card, Carousel } from "react-bootstrap";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Isotope from "isotope-layout/js/isotope";
+import classNames from "classnames";
 import "../style/carousel.css";
 import LinkNewTab from "../components/LinkNewTab";
 import { LinksContext } from "../contexts/LinksContext";
@@ -9,12 +10,17 @@ import { LinksContext } from "../contexts/LinksContext";
 export default function Timeline({ props }) {
 	const { links } = useContext(LinksContext);
 	const [data, setData] = useState([]);
+	// init one ref to store the future isotope object
+	const isotope = useRef();
+	// store the filter keyword in a state
+	const [filterKey, setFilterKey] = useState("*");
 
 	// Fetch the data from the JSON file
 	useEffect(() => {
 		fetch("/timeline_data.json")
 			.then((response) => response.json())
 			.then((data) => {
+				console.log("fetching data");
 				// Make sure any links in the description open in a new tab
 				data.forEach((item) => {
 					item.description = item.description.replace(
@@ -26,6 +32,26 @@ export default function Timeline({ props }) {
 			})
 			.catch((error) => console.error("Error fetching data:", error));
 	}, []);
+
+	// Isotope instance is created after the data has been populated to ensure elements exist in the DOM
+	useEffect(() => {
+		if (data.length > 0) {
+			isotope.current = new Isotope(".filter-container", {
+				itemSelector: ".filter-item",
+				layoutMode: "masonry",
+			});
+		}
+	}, [data]);
+
+	useEffect(() => {
+		if (!isotope.current) return;
+
+		filterKey === "*"
+			? isotope.current.arrange({ filter: `*` })
+			: isotope.current.arrange({ filter: `.${filterKey}` });
+	}, [filterKey]);
+
+	const handleFilterKeyChange = (key) => () => setFilterKey(key);
 
 	if (!data) {
 		return <></>;
@@ -44,6 +70,11 @@ export default function Timeline({ props }) {
 							that your actions have made me sad.
 						</em>
 					</Card.Text>
+					<ul>
+						<li onClick={handleFilterKeyChange("*")}>Show Both</li>
+						<li onClick={handleFilterKeyChange("papers")}>papers</li>
+						<li onClick={handleFilterKeyChange("music")}>Show music</li>
+					</ul>
 				</Card.Body>
 				{/* <Card.Footer>
 					<Alert variant="warning">
@@ -56,16 +87,11 @@ export default function Timeline({ props }) {
 				</Card.Footer> */}
 			</Card>
 
-			<ResponsiveMasonry
-				columnsCountBreakPoints={{ 350: 1, 1000: 2, 1400: 3 }}
-				gutter="1rem"
-			>
-				<Masonry>
-					{data.map((item, index) => (
-						<ItemCard item={item} key={index} />
-					))}
-				</Masonry>
-			</ResponsiveMasonry>
+			<div className="filter-container">
+				{data.map((item, index) => (
+					<ItemCard item={item} key={index} index={index} />
+				))}
+			</div>
 		</>
 	);
 }
@@ -103,7 +129,11 @@ const ItemCard = ({ item, index }) => {
 
 	// The cards
 	return (
-		<Card className="d-inline-block" key={index} style={{ margin: "1rem" }}>
+		<Card
+			className={classNames("filter-item", item.tags)}
+			key={index}
+			style={{ margin: "1rem", maxWidth: "500px" }}
+		>
 			{/* TODO: equally space these vertically */}
 			<Card.Body>
 				<Card.Title>{item.title}</Card.Title>
