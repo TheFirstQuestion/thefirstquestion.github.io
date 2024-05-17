@@ -33,7 +33,7 @@ export default function Navbar({ props }) {
 
 			<BaseNavbar.Collapse
 				id="responsive-navbar-nav"
-				className="align-items-center justify-content-end"
+				className="d-flex justify-content-end align-items-start"
 			>
 				<Nav>
 					<Nav.Link as={Link} to="/timeline">

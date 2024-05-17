@@ -1,7 +1,7 @@
 [
 	{
 		"title": "GPTeach: Interactive TA Training with GPT Based Students",
-		"description": "Julia M. Markel, Steven G. Opferman, James A. Landay, Chris Piech. GPTeach: Interactive TA Training with GPT Based Students. ACM Conference on Learning at Scale, 2023.<br><br>Interactive and realistic teacher training is hard to scale. What if we could make the teacher training experience more engaging and, as a downstream effect, reduce the potential for harm that teachers-in-training could inflict on students? We present GPTeach, an interactive chat-based teacher training tool that allows novice teachers to practice with simulated students. We performed two studies to evaluate GPTeach, and in this paper, we provide quantitative results and qualitative observations to inform future work in this area.",
+		"description": "<span class='small'>Julia M. Markel, Steven G. Opferman, James A. Landay, Chris Piech. GPTeach: Interactive TA Training with GPT Based Students. ACM Conference on Learning at Scale, 2023.</span><br><br>Interactive and realistic teacher training is hard to scale. What if we could make the teacher training experience more engaging and, as a downstream effect, reduce the potential for harm that teachers-in-training could inflict on students? We present GPTeach, an interactive chat-based teacher training tool that allows novice teachers to practice with simulated students. We performed two studies to evaluate GPTeach, and in this paper, we provide quantitative results and qualitative observations to inform future work in this area.",
 		"date": "2023-07-20",
 		"files": [
 			{
@@ -13,6 +13,10 @@
 			{
 				"name": "ACM Digital Library",
 				"url": "https://doi.org/10.1145/3573051.3593393"
+			},
+			{
+				"name": "Code in Place",
+				"url": "https://codeinplace.stanford.edu/"
 			}
 		],
 		"tags": ["research", "papers"]
@@ -99,5 +103,311 @@
 		],
 		"videos": ["/vids/iron-man-thanos.mp4"],
 		"tags": ["just plain cool", "LSJUMB"]
+	},
+	{
+		"title": "Transgender, Gender-Variant & Intersex Pro Bono Project",
+		"description": "Working with the Stanford Law School, I narrated a series of videos clarifying the name and gender marker change process in California. I'm not sure if the videos were ever published, since I can't find them anywhere, but I did film them!",
+		"tags": ["volunteering"],
+		"links": [
+			{
+				"name": "project overview",
+				"url": "https://law.stanford.edu/transgender-gender-variant-intersex-pro-bono-project/"
+			}
+		]
+	},
+	{
+		"title": "Gaieties 2021: Le-Land!",
+		"description": "I was the head writer for Gaieties 2021, Stanford's annual musical comedy. I hired and led a team of eight staff writers to develop a full-length script and worked with the composers and lyricist to craft songs to deepen the characters and emotions. I was responsible for the overall vision and tone of the show. I also played percussion in the orchestra.",
+		"links": [
+			{
+				"name": "full video",
+				"url": "https://youtu.be/ibiAGXD6UiE"
+			},
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2021/11/17/gaieties-2021-le-land-emphasizes-tradition-and-community/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2021/11/MG_2368-scaled.jpg",
+				"alt": "The Gaieties cast performing"
+			}
+		],
+		"tags": ["performing", "writing", "leadership", "Ram's Head", "music"]
+	},
+	{
+		"title": "Gaieties 2022: Cardinal Sin",
+		"description": "I played percussion in the orchestra for Gaieties 2022, Stanford's annual musical comedy.",
+		"links": [
+			{
+				"name": "watch on YouTube",
+				"url": "https://youtu.be/1dgXfcIa2ww"
+			}
+		],
+		"tags": ["performing", "Ram's Head", "music"]
+	},
+	{
+		"title": "Gaieties 2020: Unprecedented Times",
+		"description": "I was the music director for Gaieties 2020, aka \"Zoom Gaieties.\" I originally signed on to hire and conduct the orchestra for an in-person show, but when the pandemic hit, we had to pivot to a virtual format and I became more of a music facilitator. I picked, transcribed, and re-arranged historic songs from old Gaieties shows, and recruited musicians to record themselves playing the parts.",
+		"links": [
+			{
+				"name": "full video",
+				"url": "https://youtu.be/URBa7-QqTV4"
+			},
+			{
+				"name": "article in the Stanford Daily",
+				"url": "https://stanforddaily.com/2020/09/03/zoom-gaieties-an-opportunity-for-creative-and-institutional-change/"
+			},
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2020/11/18/gaieties-2020-unprecedented-times-brings-stanford-to-life-on-screen/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2020/11/Screenshot-2020-11-17-181733.jpg",
+				"alt": "The logo for Gaieties 2020, a rainbow flag overlaid with the name of the show"
+			}
+		],
+		"tags": ["music", "leadership", "Ram's Head"]
+	},
+	{
+		"title": "Tony Awards Show",
+		"date": "2021-09-26",
+		"description": "Ram's Head Theatrical Society was approached by the Tony Awards to submit a short video shown at the 74th annual live ceremony.",
+		"tags": ["just plain cool", "Ram's Head"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2021/10/IMG_6864-scaled.jpg",
+				"alt": "A group of students dresses in colorful, vibrant and eccentric clothing and strikes a spirited pose."
+			}
+		]
+	},
+	{
+		"title": "Gaieties 2019: Midterm: Impossible Ghost Proto-Cal",
+		"date": "2019-11-20",
+		"description": "I played percussion in the orchestra for Gaieties 2019, Stanford's annual musical comedy.",
+		"tags": ["performing", "Ram's Head", "music"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2019/11/111919_gaieties-2.jpg",
+				"alt": "The Gaieties cast performing"
+			}
+		],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2019/11/19/gaieties-takes-a-step-forward-in-its-2019-rendition/"
+			}
+		]
+	},
+	{
+		"title": "Pippin",
+		"description": "I played percussion in the orchestra for Ram's Head's production of Pippin. Or rather, I would have, had the show not been cancelled due to the pandemic.<br><span class='small'>Don't tell MTI, but I still have my libretto, since it got packed up with my dorm room and kept by Stanford for eight months.</span>",
+		"tags": ["performing", "Ram's Head", "music"],
+		"links": [
+			{
+				"name": "trailer",
+				"url": "https://www.youtube.com/watch?v=ZKnK4VqT3x8"
+			}
+		]
+	},
+	{
+		"title": "La Llorona",
+		"description": "I played percussion in the orchestra for Ram's Head's virtual production of La Llorona, an original musical by Obed de la Cruz. The show was performed in Spanish and English, and was a collaboration with BLACKstage.",
+		"links": [
+			{
+				"name": "full video",
+				"url": "https://www.youtube.com/watch?v=PhdN6G6YwyI"
+			}
+		],
+		"tags": ["performing", "Ram's Head", "music", "BLACKstage"]
+	},
+	{
+		"title": "Heathers",
+		"date": "2020-05-13",
+		"description": "I played percussion and provided ensemble vocals for Ram's Head's (virtual) production of Heathers. Notably, we were the first to work with the original creators of the musical to produce an official, license-able script with a female J.D.",
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2021/05/16/rams-heads-gender-bent-heathers-pushes-the-boundaries-of-digital-theater/"
+			},
+			{
+				"name": "article in the Stanford Daily",
+				"url": "https://stanforddaily.com/2021/09/27/licensing-of-gender-bent-heathers-from-rams-head-removes-one-more-barrier/"
+			}
+		],
+		"images": [
+			{
+				"url": "/img/heathers.png",
+				"alt": "J.D. and Veronica looking at each other, clearly green-screened into a living room"
+			}
+		],
+		"tags": ["performing", "Ram's Head", "music"]
+	},
+	{
+		"title": "Dream Role Cabaret",
+		"description": "I sang in Ram's Head's Dream Role Cabaret, a virtual concert where students performed songs from roles they would love to play. I sang 'Corner of the Sky' from Pippin, a show we were supposed to put on a year earlier.",
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://www.youtube.com/watch?v=RugeuC5T2A4"
+			}
+		],
+		"tags": ["performing", "Ram's Head", "music"]
+	},
+	{
+		"title": "A Chorus Line",
+		"description": "My on-stage debut was as Mark in our production of A Chorus Line. As someone who had never danced, it was probably a poor choice for a first show, but I had a lot of fun and learned a lot! I've never been so flexible in my life.",
+		"tags": ["performing", "Ram's Head", "music"],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2023/04/17/a-chorus-line-spotlights-individual-skills-of-student-actors/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2023/04/chorus-line-2.jpeg",
+				"alt": "Val, performing with the auditionees lined up behind her"
+			},
+			{
+				"url": "/img/acl_mark.jpeg",
+				"alt": "Me, in a blue tank top and navy sweatpants, with my hands clasped in prayer"
+			},
+			{
+				"url": "/img/acl_cast.jpeg",
+				"alt": "the cast huddled together, looking at the camera, dresses in sparkly gold outfits"
+			}
+		]
+	},
+	{
+		"title": "Little Shop of Horrors",
+		"description": "I played auxiliary percussion in the orchestra for Ram's Head's production of Little Shop of Horrors. Notably, our music director neglected to acquire instruments for me until the week of the show, so I was sight-reading opening night. What a time!<br><span class='small'>There's always time for dental hygiene, Seymour!</span>",
+		"tags": ["performing", "Ram's Head", "music"]
+	},
+	{
+		"title": "The 25th Annual Putnam County Spelling Bee",
+		"date": "2022-05-19",
+		"description": "I played percussion for the Stanford Light Opera Company's production of The 25th Annual Putnam County Spelling Bee. ",
+		"images": [
+			{
+				"url": "https://sloco.stanford.edu/sites/g/files/sbiybj27201/files/styles/breakpoint_2xl_2x/public/media/image/gallery/img_9328_1.jpg?itok=H_-0936h",
+				"alt": "The cast of The 25th Annual Putnam County Spelling Bee"
+			}
+		],
+		"tags": ["performing", "SLOCo", "music"]
+	},
+	{
+		"title": "Sweeney Todd: The Demon Barber of Fleet Street",
+		"date": "2023-05-16",
+		"description": "I was the principal percussionist for the Stanford Light Opera Company's production of Sweeney Todd. I played a lot of different instruments, including a lot of different types of drums, a lot of different types of cymbals, and a lot of different types of metal things that you hit with other metal things.",
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2023/05/16/sweeney-todd-a-darkly-hilarious-take-on-sondheims-murderous-musical/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2023/05/sweeney-todd.jpg",
+				"alt": "The cast of Sweeney Todd, clasped hands raised in a bow"
+			}
+		],
+		"tags": ["performing", "SLOCo", "music"]
+	},
+	{
+		"title": "Rodgers and Hammerstein's Cinderella",
+		"description": "I was the assistant music director and percussionist for BLACKstage's production of Cinderella. I transcribed and arranged a song which we added to the show, set up audio equipment for the orchestra, and trained under the technical director to build pieces of the set. Everyone involved was so talented and so kind. It was incredibly fun and my favorite show at Stanford.",
+		"tags": ["performing", "BLACKstage", "music"],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2023/05/31/blackstage-adds-more-magic-to-a-reimagined-cinderella/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2023/05/BLACKstage-22Cinderella22.jpg",
+				"alt": "Prince Chistopher and Cinderella, touching foreheads"
+			}
+		]
+	},
+	{
+		"title": "BATS Improv",
+		"date": "2023-03-23",
+		"description": "Occasionally, I perform as a musical improvisor with BATS Improv, a professional improv theater in San Francisco. The group has a longstanding history with the Stanford Improvisors, and it's been a great joy to get to play with SImps of yore.",
+		"tags": ["performing", "improv", "music"]
+	},
+	{
+		"title": "2023 RESNA Student Design Challenge Winner",
+		"description": "I was a member of the Stanford team that won first runner-up in the Student Design Challenge put on by the Rehabilitation Engineering and Assistive Technology Society of North America (which is a mouthful). Our project, DUG, was a device co-designed with a community member to help her educate the public about service dog etiquette.",
+		"images": [
+			{
+				"url": "https://www.resna.org/portals/0/DUG.png",
+				"alt": "our four team members crouched around a service dog"
+			}
+		],
+		"links": [
+			{
+				"name": "competition overview",
+				"url": "https://www.resna.org/Events/2024-Student-Design-Challenge/2023-Student-Design-Challenge"
+			}
+		],
+		"tags": ["awards", "design", "accessibility & assistive technology"]
+	},
+	{
+		"title": "Miscast Cabaret",
+		"description": "I was the music director for SLOCO's Miscast Cabaret, a performance in which students sang songs from roles they could never be cast in. I hired musicians, coordinated, planned, and led rehearsals with orchestra and singers, and arranged and transposed over a dozen songs. I also played the drums in the orchestra, and sang 'One Perfect Moment' from Bring It On. It was an incredible amount of work, but it was SO rewarding to finally pull the show.",
+		"tags": ["performing", "SLOCo", "music", "leadership"],
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://drive.google.com/file/d/1bKrnb7UJ19PVKyeTtYOCn9zs4rbI9SQ2/view?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "Greg & Friends Improv",
+		"date": "2024-01-14",
+		"description": "I performed as a musical improvisor with Greg & Friends improv at the Pear Theater in Mountain View. It was very last minute, and they had never had a percussion improvisor, so it was <em>really</em> improvised.",
+		"tags": ["performing", "improv", "music"],
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://www.youtube.com/watch?v=8usH6IXHV4g"
+			}
+		]
+	},
+	{
+		"title": "First Night at the Opera / Edges",
+		"date": "2024-01-26",
+		"description": "I was the principal percussionist (timpani and drum set) for the music department's double bill of First Night at the Opera (composed by Giancarlo Aquilanti) and Edges (composed by Benj Pasek and Justin Paul). I orchestrated three songs in the Edges song cycle.",
+		"tags": ["performing", "music"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2024/01/First-Night-at-the-Opera-Edges-Poster.png",
+				"alt": "The leads of First Night at the Opera"
+			}
+		]
+	},
+	{
+		"title": "Yakuman Chance",
+		"date": "2024-02-29",
+		"description": "At the last minute, I was pulled in to stage manage the Theater Lab's production of Yakuman Chance, an original play by Jayda Alvarez. I made sure company members were on time and on schedule, worked with the set and costume designers to acquire pieces, and wrote the tech cues for the script. I also built the setpiece and (for one night only) operated the light board.",
+		"tags": ["theater", "stage management"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2024/03/image_effd72.png",
+				"alt": "The four leads, huddled around a scrapbook"
+			}
+		],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2024/03/14/yakuman-chance-girl-talk/"
+			}
+		]
 	}
 ]

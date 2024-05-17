@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import LinkNewTab from "../components/Link";
+import LinkNewTab from "../components/LinkNewTab";
 import LinksContext from "../contexts/LinksContext";
 
 export default function HomePage({ props }) {

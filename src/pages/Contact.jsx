@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import LinksContext from "../contexts/LinksContext";
-import LinkNewTab from "../components/Link";
+import LinkNewTab from "../components/LinkNewTab";
 import { Link } from "react-router-dom";
 
 export default function Contact({ props }) {

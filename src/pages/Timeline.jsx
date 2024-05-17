@@ -1,9 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Alert, Button, Card, Carousel } from "react-bootstrap";
+import React, { useState, useEffect, useContext } from "react";
+import { Button, Card, Carousel } from "react-bootstrap";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 import "../style/carousel.css";
+import LinkNewTab from "../components/LinkNewTab";
+import { LinksContext } from "../contexts/LinksContext";
 
 export default function Timeline({ props }) {
+	const { links } = useContext(LinksContext);
 	const [data, setData] = useState([]);
 
 	// Fetch the data from the JSON file
@@ -23,6 +26,10 @@ export default function Timeline({ props }) {
 			.catch((error) => console.error("Error fetching data:", error));
 	}, []);
 
+	if (!data) {
+		return <></>;
+	}
+
 	return (
 		<>
 			<Card className="border border-dark rounded text-center">
@@ -32,14 +39,12 @@ export default function Timeline({ props }) {
 						<em>
 							If you just want the standard, less-cool,
 							not-as-fun-but-fits-on-one-page version,{" "}
-							<a href="#" rel="noreferrer noopener" target="_blank">
-								here it is
-							</a>
-							. But know that your actions have made me sad.
+							<LinkNewTab to={links.resume}>here it is</LinkNewTab>. But know
+							that your actions have made me sad.
 						</em>
 					</Card.Text>
 				</Card.Body>
-				<Card.Footer>
+				{/* <Card.Footer>
 					<Alert variant="warning">
 						Heads up: This page is dynamically generated &#8212; to keep myself
 						accountable, programming project information comes directly from
@@ -47,7 +52,7 @@ export default function Timeline({ props }) {
 						That means sometimes it's glitchy on first load. It's a work in
 						progress! Refreshing the page *should* fix it.
 					</Alert>
-				</Card.Footer>
+				</Card.Footer> */}
 			</Card>
 
 			<div>
@@ -65,6 +70,14 @@ const ItemCard = ({ item, index }) => {
 	// Add photos to combinedItems
 	if (item.photos) {
 		item.photos.forEach((photo) => {
+			combinedItems.push({
+				type: "image",
+				item: photo,
+			});
+		});
+	}
+	if (item.images) {
+		item.images.forEach((photo) => {
 			combinedItems.push({
 				type: "image",
 				item: photo,
@@ -100,7 +113,8 @@ const ItemCard = ({ item, index }) => {
 
 				<Card.Text dangerouslySetInnerHTML={{ __html: item.description }} />
 
-				<div>
+				{/* Links */}
+				<div className="d-flex justify-content-around align-items-center">
 					{item.links?.map((link, index) => (
 						<Button
 							key={index}
@@ -113,8 +127,15 @@ const ItemCard = ({ item, index }) => {
 						</Button>
 					))}
 
+					{/* Files */}
 					{item.files?.map((file, index) => (
-						<Button key={index} href={file.path} variant="warning">
+						<Button
+							key={index}
+							href={file.path}
+							variant="warning"
+							rel="noreferrer noopener"
+							target="_blank"
+						>
 							{file.name}
 						</Button>
 					))}
