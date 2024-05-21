@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import { Button, Card, Carousel } from "react-bootstrap";
+import { Button, Card, Carousel, ToggleButton } from "react-bootstrap";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 import Isotope from "isotope-layout/js/isotope";
 import classNames from "classnames";
@@ -7,33 +7,79 @@ import "../style/carousel.css";
 import LinkNewTab from "../components/LinkNewTab";
 import { LinksContext } from "../contexts/LinksContext";
 
+const DEFAULT_TAGS = ["work experience"];
+
 export default function Timeline({ props }) {
-	const { links } = useContext(LinksContext);
-	const [data, setData] = useState([]);
-	const isotope = useRef();
-	const filterContainerRef = useRef();
-	const [filterKey, setFilterKey] = useState("*");
-	const [itemWidth, setItemWidth] = useState(0);
+	// Constants
 	const minWidth = 400;
 	const maxWidth = 800;
 	const margin = getRemInPixels();
+
+	// Refs
+	const isotope = useRef();
+	const filterContainerRef = useRef();
+
+	const { links } = useContext(LinksContext);
+
+	const [data, setData] = useState([]);
+	const [itemWidth, setItemWidth] = useState(0);
 	const [newMargin, setNewMargin] = useState(margin);
+	const [allTags, setAllTags] = useState(new Set());
+	const [selectedOptions, setSelectedOptions] = useState(DEFAULT_TAGS);
+
+	// Fetch the data from the JSON file
+	useEffect(() => {
+		fetch("/timeline_data.json")
+			.then((response) => response.json())
+			.then((data) => {
+				// Make sure any links in the description open in a new tab
+				data.forEach((item) => {
+					console.log(item.title);
+					item.description = item.description.replace(
+						/<a /g,
+						'<a rel="noreferrer noopener" target="_blank" '
+					);
+
+					item.tags.forEach((tag) => setAllTags((prev) => prev.add(tag)));
+				});
+				setData(data);
+			})
+			.catch((error) => console.error("Error fetching data:", error));
+	}, []);
+
+	// Initialize isotope, now that data is loaded
+	useEffect(() => {
+		if (data.length > 0) {
+			// Isotope instance is created after the data has been populated to ensure elements exist in the DOM
+
+			isotope.current = new Isotope(".filter-container", {
+				itemSelector: ".filter-item",
+				layoutMode: "masonry",
+				masonry: {
+					fitWidth: true,
+				},
+			});
+
+			filterCards();
+
+			// Clean up the isotope instance
+			return () => {
+				isotope.current.destroy();
+			};
+		}
+	}, [data]);
 
 	// Calculate the width of each column based on the container width
 	useEffect(() => {
 		const calculateItemWidth = () => {
 			if (filterContainerRef.current) {
 				const containerWidth = filterContainerRef.current.offsetWidth;
-				console.log("containerWidth", containerWidth);
 				// Calculate the largest number of columns that could fit in the container
 				const numColumns = Math.floor(containerWidth / (minWidth + margin * 2));
-				console.log("numColumns", numColumns);
 				// Calculate the maximum width of each item, if there are that many columns
 				const width = containerWidth / numColumns - numColumns * margin * 2;
-				console.log("width", width);
 				// Ensures the width is within the min and max bounds
 				const adjustedWidth = Math.max(minWidth, Math.min(maxWidth, width));
-				console.log("adjustedWidth", adjustedWidth);
 				// Recalculate margin to center the items perfectly
 				const newMargin =
 					(containerWidth - numColumns * adjustedWidth) / (numColumns * 2);
@@ -55,46 +101,33 @@ export default function Timeline({ props }) {
 		};
 	}, [margin]);
 
-	// Fetch the data from the JSON file
-	useEffect(() => {
-		fetch("/timeline_data.json")
-			.then((response) => response.json())
-			.then((data) => {
-				console.log("fetching data");
-				// Make sure any links in the description open in a new tab
-				data.forEach((item) => {
-					item.description = item.description.replace(
-						/<a /g,
-						'<a rel="noreferrer noopener" target="_blank" '
-					);
-				});
-				setData(data);
-			})
-			.catch((error) => console.error("Error fetching data:", error));
-	}, []);
+	// Filter the items when the filters change, or when the margins are updated
+	useEffect(filterCards, [itemWidth, selectedOptions, allTags]);
 
-	// Isotope instance is created after the data has been populated to ensure elements exist in the DOM
-	useEffect(() => {
-		if (data.length > 0) {
-			isotope.current = new Isotope(".filter-container", {
-				itemSelector: ".filter-item",
-				layoutMode: "masonry",
-				masonry: {
-					fitWidth: true,
-				},
-			});
-		}
-	}, [data]);
-
-	useEffect(() => {
+	function filterCards() {
 		if (!isotope.current) return;
 
-		filterKey === "*"
-			? isotope.current.arrange({ filter: `*` })
-			: isotope.current.arrange({ filter: `.${filterKey}` });
-	}, [filterKey, itemWidth]);
+		// Comma is the OR operator
+		const filterOn = "." + selectedOptions.map(tagToClassName).join(", .");
 
-	const handleFilterKeyChange = (key) => () => setFilterKey(key);
+		if (filterOn === ".") {
+			// If no tags are selected, show default tags
+			setSelectedOptions([...DEFAULT_TAGS]);
+		} else {
+			isotope.current.arrange({
+				filter: filterOn,
+			});
+		}
+	}
+
+	// Ensure that the filter key is updated when the selected options change
+	function handleFilterChange(event) {
+		const value = event.target.value;
+		const newSelectedOptions = selectedOptions.includes(value)
+			? selectedOptions.filter((option) => option !== value)
+			: [...selectedOptions, value];
+		setSelectedOptions(newSelectedOptions);
+	}
 
 	if (!data) {
 		return <></>;
@@ -116,21 +149,61 @@ export default function Timeline({ props }) {
 							that your actions have made me sad.
 						</em>
 					</Card.Text>
-					<ul>
-						<li onClick={handleFilterKeyChange("*")}>Show Both</li>
-						<li onClick={handleFilterKeyChange("papers")}>papers</li>
-						<li onClick={handleFilterKeyChange("music")}>Show music</li>
-					</ul>
 				</Card.Body>
-				{/* <Card.Footer>
-					<Alert variant="warning">
-						Heads up: This page is dynamically generated &#8212; to keep myself
-						accountable, programming project information comes directly from
-						GitHub. <br />
-						That means sometimes it's glitchy on first load. It's a work in
-						progress! Refreshing the page *should* fix it.
-					</Alert>
-				</Card.Footer> */}
+
+				<Card.Footer>
+					<div className="d-flex flex-row px-3">
+						<div className="d-flex flex-column">
+							<Button
+								variant="warning"
+								size="sm"
+								onClick={() => setSelectedOptions([...allTags])}
+							>
+								all
+							</Button>
+
+							<Button
+								variant="warning"
+								size="sm"
+								onClick={() => setSelectedOptions(DEFAULT_TAGS)}
+							>
+								default
+							</Button>
+
+							<Button
+								variant="warning"
+								size="sm"
+								onClick={() =>
+									setSelectedOptions(
+										[...allTags].filter(
+											(item) => !selectedOptions.includes(item)
+										)
+									)
+								}
+							>
+								invert
+							</Button>
+						</div>
+
+						<div>
+							{[...allTags].map((option, index) => (
+								<ToggleButton
+									id={`btn-check-${index}`}
+									type="checkbox"
+									variant="outline-primary"
+									size="sm"
+									checked={selectedOptions.includes(option)}
+									value={option}
+									onChange={handleFilterChange}
+									key={index}
+									style={{ margin: "0.25rem" }}
+								>
+									{option}
+								</ToggleButton>
+							))}
+						</div>
+					</div>
+				</Card.Footer>
 			</Card>
 
 			<div className="filter-container">
@@ -138,6 +211,7 @@ export default function Timeline({ props }) {
 					<ItemCard
 						item={item}
 						index={index}
+						key={index}
 						style={{
 							width: itemWidth,
 							margin: `${newMargin}px`,
@@ -153,38 +227,31 @@ const ItemCard = ({ item, index, style }) => {
 	const combinedItems = [];
 
 	// Add photos to combinedItems
-	if (item.photos) {
-		item.photos.forEach((photo) => {
-			combinedItems.push({
-				type: "image",
-				item: photo,
-			});
+	item.photos?.forEach((photo) => {
+		combinedItems.push({
+			type: "image",
+			item: photo,
 		});
-	}
-	if (item.images) {
-		item.images.forEach((photo) => {
-			combinedItems.push({
-				type: "image",
-				item: photo,
-			});
+	});
+	item.images?.forEach((photo) => {
+		combinedItems.push({
+			type: "image",
+			item: photo,
 		});
-	}
+	});
 
 	// Add videos to combinedItems
-	if (item.videos) {
-		item.videos.forEach((video) => {
-			combinedItems.push({
-				type: "video",
-				item: video,
-			});
+	item.videos?.forEach((video) => {
+		combinedItems.push({
+			type: "video",
+			item: video,
 		});
-	}
+	});
 
 	// The cards
 	return (
 		<Card
-			// TODO: deal with spaces in tag names
-			className={classNames("filter-item", item.tags)}
+			className={classNames("filter-item", item.tags.map(tagToClassName))}
 			key={index}
 			style={style}
 		>
@@ -212,6 +279,7 @@ const ItemCard = ({ item, index, style }) => {
 							rel="noreferrer noopener"
 							target="_blank"
 							variant="outline-primary"
+							size="sm"
 						>
 							{link.name}
 						</Button>
@@ -225,13 +293,14 @@ const ItemCard = ({ item, index, style }) => {
 							variant="outline-secondary"
 							rel="noreferrer noopener"
 							target="_blank"
+							size="sm"
 						>
 							{file.name}
 						</Button>
 					))}
 				</div>
 
-				<ul className="card-footer text-muted fst-italic mb-0 pb-0 mt-4">
+				<ul className="card-footer small text-muted fst-italic mb-0 pb-0 mt-4">
 					Tags:
 					{item.tags?.map((tag, index) => {
 						if (index === 0) {
@@ -331,12 +400,8 @@ const ItemVideo = ({ item }) => (
 );
 
 /* ########################### Helper Functions ########################## */
-function tagToClass(tag) {
-	return tag.split(" ").join("_");
-}
-
-function classToTag(name) {
-	return name.split("_").join(" ");
+function tagToClassName(tag) {
+	return tag.split(" ").join("_").replace("'", "").replace("&", "");
 }
 
 function getRemInPixels() {

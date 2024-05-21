@@ -823,12 +823,12 @@ $btn-border-radius-lg: $border-radius-lg !default;
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 	border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
 
-$btn-hover-bg-shade-amount: 15% !default;
-$btn-hover-bg-tint-amount: 15% !default;
+$btn-hover-bg-shade-amount: 35%;
+$btn-hover-bg-tint-amount: 55%;
 $btn-hover-border-shade-amount: 20% !default;
 $btn-hover-border-tint-amount: 10% !default;
-$btn-active-bg-shade-amount: 20% !default;
-$btn-active-bg-tint-amount: 20% !default;
+$btn-active-bg-shade-amount: 90%;
+$btn-active-bg-tint-amount: 90%;
 $btn-active-border-shade-amount: 25% !default;
 $btn-active-border-tint-amount: 10% !default;
 // scss-docs-end btn-variables
@@ -2091,6 +2091,29 @@ blockquote.blockquote {
 
 // Indicators
 
+#pageContent {
+	// Extend Bootstrap button classes
+	.btn {
+		&.checked {
+			// Custom styling for selected button
+			background-color: #007bff;
+			color: #fff;
+			border-color: #007bff;
+		}
+	}
+
+	// Extend Bootstrap hover states for buttons
+	.btn {
+		&:hover {
+			&.checked {
+				// Override hover styles for selected button
+				background-color: #0056b3;
+				border-color: #0056b3;
+			}
+		}
+	}
+}
+
 .badge {
 	border-radius: $border-radius-sm-sketchy;
 
@@ -2146,6 +2169,7 @@ blockquote.blockquote {
 
 	&-footer {
 		border-top-width: 2px;
+		background-color: $card-bg;
 	}
 }
 

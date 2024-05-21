@@ -1,7 +1,7 @@
 [
 	{
 		"title": "GPTeach: Interactive TA Training with GPT Based Students",
-		"description": "<span class='small'>Julia M. Markel, Steven G. Opferman, James A. Landay, Chris Piech. GPTeach: Interactive TA Training with GPT Based Students. ACM Conference on Learning at Scale, 2023.</span><br /><br />Interactive and realistic teacher training is hard to scale. What if we could make the teacher training experience more engaging and, as a downstream effect, reduce the potential for harm that teachers-in-training could inflict on students? We present GPTeach, an interactive chat-based teacher training tool that allows novice teachers to practice with simulated students. We performed two studies to evaluate GPTeach, and in this paper, we provide quantitative results and qualitative observations to inform future work in this area.",
+		"description": "<p class='small'>Julia M. Markel, Steven G. Opferman, James A. Landay, Chris Piech. GPTeach: Interactive TA Training with GPT Based Students. ACM Conference on Learning at Scale, 2023.</p>Interactive and realistic teacher training is hard to scale. What if we could make the teacher training experience more engaging and, as a downstream effect, reduce the potential for harm that teachers-in-training could inflict on students? We present GPTeach, an interactive chat-based teacher training tool that allows novice teachers to practice with simulated students. We performed two studies to evaluate GPTeach, and in this paper, we provide quantitative results and qualitative observations to inform future work in this area.",
 		"date": "2023-07-20",
 		"files": [
 			{
@@ -62,7 +62,7 @@
 	},
 	{
 		"title": "Server",
-		"description": "<em>(Not to be confused with the type of computer with the same name.)</em><br /><br />The summer after graduating high school, I got a job in the dining room of the senior living facility where my grandparents lived. It was really fun, I learned a lot, and I got to know a bunch of really cool people.",
+		"description": "<p class='fst-italic small text-muted'>(Not to be confused with the type of computer with the same name.)</p>The summer after graduating high school, I got a job in the dining room of the senior living facility where my grandparents lived. It was really fun, I learned a lot, and I got to know a bunch of really cool people.",
 		"tags": ["work experience", "old people"]
 	},
 	{
