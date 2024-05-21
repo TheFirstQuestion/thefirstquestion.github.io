@@ -19,7 +19,7 @@
 				"url": "https://codeinplace.stanford.edu/"
 			}
 		],
-		"tags": ["research", "papers"]
+		"tags": ["research", "work experience", "tech"]
 	},
 	{
 		"title": "Eli's Places: College Football's Fantastic Finishes (Ep. 9)",
@@ -57,7 +57,7 @@
 	},
 	{
 		"title": "Peer Technology Specialist",
-		"description": "For a short time, I worked at a help desk, diagnosing software, hardware, and networking problems for students and Stanford affiliates. And then we got sent home for COVID, which made that really hard. But it was interesting while it lasted!",
+		"description": "For a short time, I worked at a help desk diagnosing software, hardware, and networking problems for students and Stanford affiliates. Then we got sent home for COVID, which made that really hard. But it was interesting while it lasted!",
 		"tags": ["work experience", "tech"]
 	},
 	{
@@ -351,7 +351,7 @@
 		],
 		"links": [
 			{
-				"name": "competition overview",
+				"name": "competition results",
 				"url": "https://www.resna.org/Events/2024-Student-Design-Challenge/2023-Student-Design-Challenge"
 			}
 		],
@@ -396,7 +396,7 @@
 		"title": "Yakuman Chance",
 		"date": "2024-02-29",
 		"description": "At the last minute, I was pulled in to stage manage the Theater Lab's production of Yakuman Chance, an original play by Jayda Alvarez. I made sure company members were on time and on schedule, worked with the set and costume designers to acquire pieces, and wrote the tech cues for the script. I also built the setpiece and (for one night only) operated the light board.",
-		"tags": ["theater", "stage management"],
+		"tags": ["theater"],
 		"images": [
 			{
 				"url": "https://stanforddaily.com/wp-content/uploads/2024/03/image_effd72.png",
@@ -409,5 +409,41 @@
 				"url": "https://stanforddaily.com/2024/03/14/yakuman-chance-girl-talk/"
 			}
 		]
+	},
+	{
+		"title": "Percussion Instructor",
+		"description": "I was hired by a San Francisco high school to turn seven non-musicians into a drumline. I wrote music, taught lessons, assisted the directors at performances, chose and maintained equipment, and occasionally played with the students.",
+		"tags": ["music", "leadership"]
+	},
+	{
+		"title": "International Collegiate Programming Contest (2021)",
+		"description": "I participated in the North America Qualifier on a team of two. We solved four problems in five hours, and were ranked #298.",
+		"tags": ["tech"]
+	},
+	{
+		"title": "Stanford High Performance Computing Center",
+		"description": "I began working for the HPCC my freshman year at Stanford. My favorite thing was getting to set up a new system we received as a hand-me-down from a national lab. Mostly, I wrote documentation and user guides for a variety of topics and audiences and maintained our internal and external websites. I also got loaned out for website consulting to outside research groups. One time I threw together a super basic graphic that my boss loves and now uses all the time, which is fun.",
+		"photos": [
+			{
+				"url": "/img/hpcc-graphic.png",
+				"alt": "a graphic I made for the HPCC, representing that it is the intersection of industry, learning, teaching, and research"
+			}
+		],
+		"links": [
+			{
+				"name": "HPCC website",
+				"url": "https://hpcc.stanford.edu/"
+			},
+			{
+				"name": "a website I made",
+				"url": "https://insieme.stanford.edu/"
+			}
+		],
+		"tags": ["work experience", "tech"]
+	},
+	{
+		"title": "External Relationz",
+		"description": "During the pandemic, the LSJUMB overhauled its membership, staff, and leadership structure, in addition to replacing its entire suite of governing documents and processes. I co-chaired the committee in charge of this process, had a hand in deciding most policies, and wrote significant portions of the new governing documents, in addition to my nominal task of interfacing with alums, other student groups, and any other outside parties interested in the Band.",
+		"tags": ["leadership", "LSJUMB"]
 	}
 ]

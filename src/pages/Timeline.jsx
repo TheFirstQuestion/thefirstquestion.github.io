@@ -34,12 +34,12 @@ export default function Timeline({ props }) {
 			.then((data) => {
 				// Make sure any links in the description open in a new tab
 				data.forEach((item) => {
-					console.log(item.title);
 					item.description = item.description.replace(
 						/<a /g,
 						'<a rel="noreferrer noopener" target="_blank" '
 					);
 
+					// Add the tags to the set of all tags
 					item.tags.forEach((tag) => setAllTags((prev) => prev.add(tag)));
 				});
 				setData(data);
@@ -186,27 +186,32 @@ export default function Timeline({ props }) {
 						</div>
 
 						<div>
-							{[...allTags].map((option, index) => (
-								<ToggleButton
-									id={`btn-check-${index}`}
-									type="checkbox"
-									variant="outline-primary"
-									size="sm"
-									checked={selectedOptions.includes(option)}
-									value={option}
-									onChange={handleFilterChange}
-									key={index}
-									style={{ margin: "0.25rem" }}
-								>
-									{option}
-								</ToggleButton>
-							))}
+							{[...allTags]
+								.sort((a, b) =>
+									a.localeCompare(b, undefined, { sensitivity: "base" })
+								)
+								.map((option, index) => (
+									<ToggleButton
+										id={`btn-check-${index}`}
+										type="checkbox"
+										variant="outline-primary"
+										size="sm"
+										checked={selectedOptions.includes(option)}
+										value={option}
+										onChange={handleFilterChange}
+										key={index}
+										style={{ margin: "0.25rem" }}
+									>
+										{option}
+									</ToggleButton>
+								))}
 						</div>
 					</div>
 				</Card.Footer>
 			</Card>
 
 			<div className="filter-container">
+				{/* TODO: sort by date */}
 				{data.map((item, index) => (
 					<ItemCard
 						item={item}
@@ -315,6 +320,7 @@ const ItemCard = ({ item, index, style }) => {
 	);
 };
 
+// TODO: use Flickity? https://flickity.metafizzy.co/
 const MediaCarousel = ({ entries }) => {
 	// Do not render if there are no entries
 	if (!entries || entries.length === 0) {

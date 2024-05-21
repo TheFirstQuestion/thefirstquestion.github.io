@@ -2103,13 +2103,10 @@ blockquote.blockquote {
 	}
 
 	// Extend Bootstrap hover states for buttons
-	.btn {
+	.btn-outline-primary {
 		&:hover {
-			&.checked {
-				// Override hover styles for selected button
-				background-color: #0056b3;
-				border-color: #0056b3;
-			}
+			// Timeline: hovering over a selected check-button should change the color (slightly)
+			background-color: shift-color($primary, 10);
 		}
 	}
 }
