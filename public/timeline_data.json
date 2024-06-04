@@ -1,0 +1,536 @@
+[
+	{
+		"title": "GPTeach: Interactive TA Training with GPT Based Students",
+		"description": "<p class='small'>Julia M. Markel, Steven G. Opferman, James A. Landay, Chris Piech. GPTeach: Interactive TA Training with GPT Based Students. ACM Conference on Learning at Scale, 2023.</p>Interactive and realistic teacher training is hard to scale. What if we could make the teacher training experience more engaging and, as a downstream effect, reduce the potential for harm that teachers-in-training could inflict on students? We present GPTeach, an interactive chat-based teacher training tool that allows novice teachers to practice with simulated students. We performed two studies to evaluate GPTeach, and in this paper, we provide quantitative results and qualitative observations to inform future work in this area.",
+		"date": "2023-07-20",
+		"files": [
+			{
+				"name": "PDF",
+				"path": "/files/GPTeach_LearningAtScale.pdf"
+			}
+		],
+		"links": [
+			{
+				"name": "ACM Digital Library",
+				"url": "https://doi.org/10.1145/3573051.3593393"
+			},
+			{
+				"name": "Code in Place",
+				"url": "https://codeinplace.stanford.edu/"
+			}
+		],
+		"repos": [
+			{
+				"name": "GitHub repo",
+				"url": "https://github.com/juliamarkel/GPTeach"
+			}
+		],
+		"tags": ["research", "work experience", "tech"]
+	},
+	{
+		"title": "Eli's Places: College Football's Fantastic Finishes (Ep. 9)",
+		"description": "Eli Manning and ESPN+ invited members of the LSJUMB to discuss, analyze, and reenact <a href='https://www.youtube.com/watch?v=mfebpLfAt8g'>The Play</a>.",
+		"photos": [
+			{
+				"url": "https://s.secure.espncdn.com/stitcher/artwork/16x9.jpg?height=720&width=1280&source=https%3A%2F%2Fartwork.espncdn.com%2Fmedia%2F15373f97-3d07-41d2-b473-850bc104f0f7%2F16x9%2F1280x720_20211026184001.jpg&cb=12&templateId=espn.core.dtc.large.16x9.1&showBadge=true&package=ESPN_PLUS",
+				"alt": "Promotional image from ESPN"
+			},
+			{
+				"url": "/img/eli-manning.JPG",
+				"alt": "Eli Manning and the LSJUMB"
+			}
+		],
+		"links": [
+			{
+				"name": "watch on ESPN+",
+				"url": "https://www.espn.com/watch/player/_/id/15373f97-3d07-41d2-b473-850bc104f0f7#bucketId=2"
+			}
+		],
+		"tags": ["just plain cool"]
+	},
+	{
+		"title": "All About That Bass",
+		"description": "As an audition for a virtual musical, I used the list of instruments to arrange, perform, and produce my own take on Meghan Trainor's 'All About That Bass.'",
+		"videos": [
+			"https://drive.google.com/file/d/1MpVZEVOE3GQzlXibkX2RUJAa87owTmRu/preview"
+		],
+		"tags": ["music", "performing"]
+	},
+	{
+		"title": "Volunteer Notetaker",
+		"description": "At Stanford, some disability accomodations give a student access to notes taken by other students, for whatever reason. My job is then to take and upload neat and comprehensive notes for each class session. You're not supposed to know who is getting the accomodations, but one time a classmate told me they really like the way I take notes, so...",
+		"tags": ["volunteering"]
+	},
+	{
+		"title": "Peer Technology Specialist",
+		"description": "For a short time, I worked at a help desk diagnosing software, hardware, and networking problems for students and Stanford affiliates. Then we got sent home for COVID, which made that really hard. But it was interesting while it lasted!",
+		"tags": ["work experience", "tech"]
+	},
+	{
+		"title": "Server",
+		"description": "<p class='fst-italic small text-muted'>(Not to be confused with the type of computer with the same name.)</p>The summer after graduating high school, I got a job in the dining room of the senior living facility where my grandparents lived. It was really fun, I learned a lot, and I got to know a bunch of really cool people.",
+		"tags": ["work experience", "old people"]
+	},
+	{
+		"title": "Concierge",
+		"description": "I took time off from school during the pandemic, and one of the things I did was work as a concierge (read: receptionist with extra credit) in an old folks' home. It was so fun to get to be so involved with my residents, and to have the opportunity to do lots of little things to improve the lives of residents, staff, and family members alike.<br /><br />Because of the work I did screening visitors and tracking vaccinations, I was also technically known as the 'Infection Control Specialist,' which is a cool and fun title.",
+		"photos": [
+			{
+				"url": "/img/clearwater.png",
+				"alt": "Me with one of my residents"
+			}
+		],
+		"tags": ["work experience", "old people"]
+	},
+	{
+		"title": "Axis o' Rhythm",
+		"description": "As the section leader for ABF Drumz, I got to play the biggest, funnest drum. I taught drum lessons and led rehearsals, did a bunch of composing, arranging, and transcribing, and organized all our equipment. More importantly, I got to foster community for my sectionees, watch friendships form and flourish between new and returning members, and advocate for the interests and concerns of my section members in staff, leadership, and director meetings.",
+		"photos": [
+			{
+				"url": "/img/stuff-solo.JPG",
+				"alt": "Me playing a drum solo"
+			},
+			{
+				"url": "/img/oregon-state-band.png",
+				"alt": "A screenshot from the Oregon State Band Instagram account, centered on me with 'Go Beavs' written on my drum, captioned 'we see you'"
+			}
+		],
+		"tags": ["music", "leadership"]
+	},
+	{
+		"title": "External Relationz",
+		"description": "During the pandemic, the LSJUMB overhauled its membership, staff, and leadership structure, in addition to replacing its entire suite of governing documents and processes. I co-chaired the committee in charge of this process, had a hand in deciding most policies, and wrote significant portions of the new governing documents, in addition to my nominal task of interfacing with alums, other student groups, and any other outside parties interested in the Band.",
+		"tags": ["leadership"]
+	},
+	{
+		"title": "The Time I Was Iron Man",
+		"description": "For a football game, the section leaders dressed up as the Avengers. I got to be Iron Man, a role I took very seriously: I designed and built my own arc reactor. It's dope as hell.",
+		"photos": [
+			{
+				"url": "/img/arc-reactor.png",
+				"alt": "My arc reactor"
+			}
+		],
+		"videos": ["/vids/iron-man-thanos.mp4"],
+		"tags": ["just plain cool"]
+	},
+	{
+		"title": "Transgender, Gender-Variant & Intersex Pro Bono Project",
+		"description": "Working with the Stanford Law School, I narrated a series of videos clarifying the name and gender marker change process in California. I'm not sure if the videos were ever published, since I can't find them anywhere, but I did film them!",
+		"tags": ["volunteering"],
+		"links": [
+			{
+				"name": "project overview",
+				"url": "https://law.stanford.edu/transgender-gender-variant-intersex-pro-bono-project/"
+			}
+		]
+	},
+	{
+		"title": "Gaieties 2021: Le-Land!",
+		"description": "I was the head writer for Gaieties 2021, Stanford's annual musical comedy. I hired and led a team of eight staff writers to develop a full-length script and worked with the composers and lyricist to craft songs to deepen the characters and emotions. I was responsible for the overall vision and tone of the show. I also played percussion in the orchestra.",
+		"links": [
+			{
+				"name": "full video",
+				"url": "https://youtu.be/ibiAGXD6UiE"
+			},
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2021/11/17/gaieties-2021-le-land-emphasizes-tradition-and-community/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2021/11/MG_2368-scaled.jpg",
+				"alt": "The Gaieties cast performing"
+			},
+			{
+				"url": "/img/drummer-cage.png",
+				"alt": "Text: \"Why does the drummer have a little protective shield around him? Is he dangerous?\" (-Elisabeth) \"Naughty drummer boys get put in the naughty drummer cage\" (-Hannah)"
+			}
+		],
+		"tags": ["performing", "writing", "leadership", "music"]
+	},
+	{
+		"title": "Gaieties 2022: Cardinal Sin",
+		"description": "I played percussion in the orchestra for Gaieties 2022, Stanford's annual musical comedy.",
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://youtu.be/1dgXfcIa2ww"
+			}
+		],
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "Gaieties 2020: Unprecedented Times",
+		"description": "I was the music director for Gaieties 2020, aka \"Zoom Gaieties.\" I originally signed on to hire and conduct the orchestra for an in-person show, but when the pandemic hit, we had to pivot to a virtual format and I became more of a music facilitator. I picked, transcribed, and re-arranged historic songs from old Gaieties shows, and recruited musicians to record themselves playing the parts.",
+		"links": [
+			{
+				"name": "full video",
+				"url": "https://youtu.be/URBa7-QqTV4"
+			},
+			{
+				"name": "article in the Stanford Daily",
+				"url": "https://stanforddaily.com/2020/09/03/zoom-gaieties-an-opportunity-for-creative-and-institutional-change/"
+			},
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2020/11/18/gaieties-2020-unprecedented-times-brings-stanford-to-life-on-screen/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2020/11/Screenshot-2020-11-17-181733.jpg",
+				"alt": "The logo for Gaieties 2020, a rainbow flag overlaid with the name of the show"
+			}
+		],
+		"tags": ["music", "leadership"]
+	},
+	{
+		"title": "Tony Awards Show",
+		"date": "2021-09-26",
+		"description": "Ram's Head Theatrical Society was approached by the Tony Awards to submit a short video shown at the 74th annual live ceremony.",
+		"tags": ["just plain cool"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2021/10/IMG_6864-scaled.jpg",
+				"alt": "A group of students dresses in colorful, vibrant and eccentric clothing and strikes a spirited pose."
+			}
+		]
+	},
+	{
+		"title": "Gaieties 2019: Midterm: Impossible Ghost Proto-Cal",
+		"date": "2019-11-20",
+		"description": "I played percussion in the orchestra for Gaieties 2019, Stanford's annual musical comedy.",
+		"tags": ["performing", "music"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2019/11/111919_gaieties-2.jpg",
+				"alt": "The Gaieties cast performing"
+			}
+		],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2019/11/19/gaieties-takes-a-step-forward-in-its-2019-rendition/"
+			}
+		]
+	},
+	{
+		"title": "Pippin",
+		"description": "I played percussion in the orchestra for Ram's Head's production of Pippin. Or rather, I would have, had the show not been cancelled due to the pandemic.<br /><span class='small'>Don't tell MTI, but I still have my libretto, since it got packed up with my dorm room and kept by Stanford for eight months.</span>",
+		"tags": ["performing", "music"],
+		"links": [
+			{
+				"name": "trailer",
+				"url": "https://www.youtube.com/watch?v=ZKnK4VqT3x8"
+			}
+		]
+	},
+	{
+		"title": "La Llorona",
+		"description": "I played percussion in the orchestra for Ram's Head's virtual production of La Llorona, an original musical by Obed de la Cruz. The show was performed in Spanish and English, and was a collaboration with BLACKstage.",
+		"links": [
+			{
+				"name": "full video",
+				"url": "https://www.youtube.com/watch?v=PhdN6G6YwyI"
+			}
+		],
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "Heathers",
+		"date": "2020-05-13",
+		"description": "I played percussion and provided ensemble vocals for Ram's Head's (virtual) production of Heathers. Notably, we were the first to work with the original creators of the musical to produce an official, license-able script with a female J.D.",
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2021/05/16/rams-heads-gender-bent-heathers-pushes-the-boundaries-of-digital-theater/"
+			},
+			{
+				"name": "article in the Stanford Daily",
+				"url": "https://stanforddaily.com/2021/09/27/licensing-of-gender-bent-heathers-from-rams-head-removes-one-more-barrier/"
+			}
+		],
+		"images": [
+			{
+				"url": "/img/heathers.png",
+				"alt": "J.D. and Veronica looking at each other, clearly green-screened into a living room"
+			}
+		],
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "Dream Role Cabaret",
+		"description": "I sang in Ram's Head's Dream Role Cabaret, a virtual concert where students performed songs from roles they would love to play. I sang 'Corner of the Sky' from Pippin, a show we were supposed to put on a year earlier.",
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://www.youtube.com/watch?v=RugeuC5T2A4"
+			}
+		],
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "A Chorus Line",
+		"description": "My on-stage debut was as Mark in our production of A Chorus Line. As someone who had never danced, it was probably a poor choice for a first show, but I had a lot of fun and learned a lot! I've never been so flexible in my life.",
+		"tags": ["performing", "music"],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2023/04/17/a-chorus-line-spotlights-individual-skills-of-student-actors/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2023/04/chorus-line-2.jpeg",
+				"alt": "Val, performing with the auditionees lined up behind her"
+			},
+			{
+				"url": "/img/acl_mark.jpeg",
+				"alt": "Me, in a blue tank top and navy sweatpants, with my hands clasped in prayer"
+			},
+			{
+				"url": "/img/acl_cast.jpeg",
+				"alt": "the cast huddled together, looking at the camera, dresses in sparkly gold outfits"
+			}
+		]
+	},
+	{
+		"title": "Little Shop of Horrors",
+		"description": "I played auxiliary percussion in the orchestra for Ram's Head's production of Little Shop of Horrors. Notably, our music director neglected to acquire instruments for me until the week of the show, so I was sight-reading opening night. What a time!<br /><span class='small'>There's always time for dental hygiene, Seymour!</span>",
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "The 25th Annual Putnam County Spelling Bee",
+		"date": "2022-05-19",
+		"description": "I played percussion for the Stanford Light Opera Company's production of The 25th Annual Putnam County Spelling Bee. ",
+		"images": [
+			{
+				"url": "https://sloco.stanford.edu/sites/g/files/sbiybj27201/files/styles/breakpoint_2xl_2x/public/media/image/gallery/img_9328_1.jpg?itok=H_-0936h",
+				"alt": "The cast of The 25th Annual Putnam County Spelling Bee"
+			}
+		],
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "Sweeney Todd: The Demon Barber of Fleet Street",
+		"date": "2023-05-16",
+		"description": "I was the principal percussionist for the Stanford Light Opera Company's production of Sweeney Todd. I played a lot of different instruments, including a lot of different types of drums, a lot of different types of cymbals, and a lot of different types of metal things that you hit with other metal things.",
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2023/05/16/sweeney-todd-a-darkly-hilarious-take-on-sondheims-murderous-musical/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2023/05/sweeney-todd.jpg",
+				"alt": "The cast of Sweeney Todd, clasped hands raised in a bow"
+			}
+		],
+		"tags": ["performing", "music"]
+	},
+	{
+		"title": "Rodgers and Hammerstein's Cinderella",
+		"description": "I was the assistant music director and percussionist for BLACKstage's production of Cinderella. I transcribed and arranged a song which we added to the show, set up audio equipment for the orchestra, and trained under the technical director to build pieces of the set. Everyone involved was so talented and so kind. It was incredibly fun and my favorite show at Stanford.",
+		"tags": ["performing", "music"],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2023/05/31/blackstage-adds-more-magic-to-a-reimagined-cinderella/"
+			}
+		],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2023/05/BLACKstage-22Cinderella22.jpg",
+				"alt": "Prince Chistopher and Cinderella, touching foreheads"
+			}
+		]
+	},
+	{
+		"title": "BATS Improv",
+		"date": "2023-03-23",
+		"description": "Occasionally, I perform as a musical improvisor with BATS Improv, a professional improv theater in San Francisco. The group has a longstanding history with the Stanford Improvisors, and it's been a great joy to get to play with SImps of yore.",
+		"tags": ["performing", "improv", "music"]
+	},
+	{
+		"title": "2023 RESNA Student Design Challenge Winner",
+		"description": "I was a member of the Stanford team that won first runner-up in the Student Design Challenge put on by the Rehabilitation Engineering and Assistive Technology Society of North America (which is a mouthful). Our project, DUG, was a device co-designed with a community member to help her educate the public about service dog etiquette.",
+		"images": [
+			{
+				"url": "https://www.resna.org/portals/0/DUG.png",
+				"alt": "our four team members crouched around a service dog"
+			}
+		],
+		"links": [
+			{
+				"name": "competition results",
+				"url": "https://www.resna.org/Events/2024-Student-Design-Challenge/2023-Student-Design-Challenge"
+			}
+		],
+		"tags": ["awards", "design", "accessibility & assistive technology"]
+	},
+	{
+		"title": "Miscast Cabaret",
+		"description": "I was the music director for SLOCO's Miscast Cabaret, a performance in which students sang songs from roles they could never be cast in. I hired musicians, coordinated, planned, and led rehearsals with orchestra and singers, and arranged and transposed over a dozen songs. I also played the drums in the orchestra, and sang 'One Perfect Moment' from Bring It On. It was an incredible amount of work, but it was SO rewarding to finally pull the show.",
+		"tags": ["performing", "music", "leadership"],
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://drive.google.com/file/d/1bKrnb7UJ19PVKyeTtYOCn9zs4rbI9SQ2/view?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "Greg & Friends Improv",
+		"date": "2024-01-14",
+		"description": "I performed as a musical improvisor with Greg & Friends improv at the Pear Theater in Mountain View. It was very last minute, and they had never had a percussion improvisor, so it was <em>really</em> improvised.",
+		"tags": ["performing", "improv", "music"],
+		"links": [
+			{
+				"name": "full show",
+				"url": "https://www.youtube.com/watch?v=8usH6IXHV4g"
+			}
+		]
+	},
+	{
+		"title": "First Night at the Opera / Edges",
+		"date": "2024-01-26",
+		"description": "I was the principal percussionist (timpani and drum set) for the music department's double bill of First Night at the Opera (composed by Giancarlo Aquilanti) and Edges (composed by Benj Pasek and Justin Paul). I orchestrated three songs in the Edges song cycle.",
+		"tags": ["performing", "music"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2024/01/First-Night-at-the-Opera-Edges-Poster.png",
+				"alt": "The leads of First Night at the Opera"
+			}
+		]
+	},
+	{
+		"title": "Yakuman Chance",
+		"date": "2024-02-29",
+		"description": "At the last minute, I was pulled in to stage manage the Theater Lab's production of Yakuman Chance, an original play by Jayda Alvarez. I made sure company members were on time and on schedule, worked with the set and costume designers to acquire pieces, and wrote the tech cues for the script. I also built the setpiece and (for one night only) operated the light board.",
+		"tags": ["theater"],
+		"images": [
+			{
+				"url": "https://stanforddaily.com/wp-content/uploads/2024/03/image_effd72.png",
+				"alt": "The four leads, huddled around a scrapbook"
+			}
+		],
+		"links": [
+			{
+				"name": "review",
+				"url": "https://stanforddaily.com/2024/03/14/yakuman-chance-girl-talk/"
+			}
+		]
+	},
+	{
+		"title": "Percussion Instructor",
+		"description": "I was hired by a San Francisco high school to turn seven non-musicians into a drumline. I wrote music, taught lessons, assisted the directors at performances, chose and maintained equipment, and occasionally played with the students.",
+		"tags": ["music", "leadership"]
+	},
+	{
+		"title": "International Collegiate Programming Contest (2021)",
+		"description": "I participated in the North America Qualifier on a team of two. We solved four problems in five hours, and were ranked #298.",
+		"tags": ["tech"]
+	},
+	{
+		"title": "Stanford High Performance Computing Center",
+		"description": "I began working for the HPCC my freshman year at Stanford. My favorite thing was getting to set up a new system we received as a hand-me-down from a national lab. Mostly, I wrote documentation and user guides for a variety of topics and audiences and maintained our internal and external websites. I also got loaned out for website consulting to outside research groups. One time I threw together a super basic graphic that my boss loves and now uses all the time, which is fun.",
+		"photos": [
+			{
+				"url": "/img/hpcc-graphic.png",
+				"alt": "a graphic I made for the HPCC, representing that it is the intersection of industry, learning, teaching, and research"
+			}
+		],
+		"links": [
+			{
+				"name": "HPCC website",
+				"url": "https://hpcc.stanford.edu/"
+			},
+			{
+				"name": "a website I made",
+				"url": "https://insieme.stanford.edu/"
+			}
+		],
+		"tags": ["work experience", "tech"]
+	},
+	{
+		"title": "External Relationz",
+		"description": "During the pandemic, the LSJUMB overhauled its membership, staff, and leadership structure, in addition to replacing its entire suite of governing documents and processes. I co-chaired the committee in charge of this process, had a hand in deciding most policies, and wrote significant portions of the new governing documents, in addition to my nominal task of interfacing with alums, other student groups, and any other outside parties interested in the Band.",
+		"tags": ["leadership"]
+	},
+	{
+		"title": "Stanford Improvisors (SImps)",
+		"description": "I was a member of the Stanford Improvisors, a student-run improv group. I performed as a musical and lighting improvisor, directed formats, and taught workshops. I was a co-president for one year and financial officer for two years.",
+		"tags": ["performing", "improv", "music", "leadership"],
+		"images": [
+			{
+				"url": "/img/mimping.png",
+				"alt": "Me during a show. I'm making eye contact with the piano player."
+			},
+			{
+				"url": "https://images.squarespace-cdn.com/content/v1/5c4127601aef1dea3497ef56/1702803197369-OMEQMMP5IVLM5I4BYDJS/DSC_1028.JPG?format=1500w",
+				"alt": "a group of six improvisors on stage, in various poses. I am in the background, looking at them intently"
+			}
+		],
+		"links": [
+			{
+				"name": "Youtube",
+				"url": "https://www.youtube.com/channel/UCLpT6lMWVlOOOQKnrO-WfFw"
+			},
+			{
+				"name": "past shows",
+				"url": "https://www.stanfordimprovisors.com/past-shows"
+			}
+		]
+	},
+	{
+		"title": "Thoroughly Modern Millie",
+		"date": "2019",
+		"description": "The summer after I graduated high school, I played auxiliary percussion for Summer Stock Stage's production of Thoroughly Modern Millie. They had never had student musicians before, so they didn't pay me :( but it was still fun! We got to play at the Indiana Repertory Theatre, which was cool.",
+		"tags": ["performing", "music"],
+		"links": [
+			{
+				"name": "trailer",
+				"url": "https://www.youtube.com/watch?v=QMRdfrNCo6M"
+			}
+		]
+	},
+	{
+		"title": "Sociology Research",
+		"description": "I worked on several projects at Stanford's VMware Women's Leadership Innovation Lab. I helped design and develop what I'm told is a methodological innovation in collecting digital trace data during online survey experiments, which has been used in several papers.",
+		"tags": ["research", "tech", "work experience"],
+		"links": [
+			{
+				"name": "SocArXiv preprint",
+				"url": "https://doi.org/10.31235/osf.io/frhj6"
+			}
+		],
+		"repos": [
+			{
+				"name": "one study",
+				"url": "https://github.com/TheFirstQuestion/GCA-website"
+			},
+			{
+				"name": "Resume Parser",
+				"url": "https://github.com/TheFirstQuestion/resume-parser"
+			},
+			{
+				"name": "another study",
+				"url": "https://github.com/TheFirstQuestion/hiring-information-overload-website"
+			}
+		]
+	},
+	{
+		"title": "Pilot",
+		"description": "In CS 377Q: Designing for Accessibility, my team went through the design thinking process to develop a Wizard of Oz prototype. Our project, Pilot, was a variety of Zoom enhancements to empower women with ADHD to better manage distractions during online meetings. We conducted user interviews and conducted iterative testing.",
+		"tags": ["accessibility & assistive technology", "design"],
+		"repos": [
+			{
+				"name": "GitHub repo",
+				"url": "https://github.com/TheFirstQuestion/pilot"
+			}
+		]
+	}
+]
