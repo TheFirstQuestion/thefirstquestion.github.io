@@ -40,9 +40,9 @@ export default function Navbar({ props }) {
 						Things I've Done
 					</Nav.Link>
 
-					<Nav.Link as={Link} to="/resources">
+					{/* <Nav.Link as={Link} to="/resources">
 						Resources
-					</Nav.Link>
+					</Nav.Link> */}
 
 					<Nav.Link as={Link} to="/contact" className="btn btn-warning">
 						Contact

@@ -7,7 +7,7 @@ import "../style/carousel.css";
 import LinkNewTab from "../components/LinkNewTab";
 import { LinksContext } from "../contexts/LinksContext";
 
-const DEFAULT_TAGS = ["work experience"];
+const DEFAULT_TAGS = ["work experience", "leadership", "design"];
 
 export default function Timeline({ props }) {
 	// Constants
@@ -110,6 +110,8 @@ export default function Timeline({ props }) {
 		// Comma is the OR operator
 		const filterOn = "." + selectedOptions.map(tagToClassName).join(", .");
 
+		// TODO: stop any videos that are playing
+
 		if (filterOn === ".") {
 			// If no tags are selected, show default tags
 			setSelectedOptions([...DEFAULT_TAGS]);
@@ -200,7 +202,7 @@ export default function Timeline({ props }) {
 										value={option}
 										onChange={handleFilterChange}
 										key={index}
-										style={{ margin: "0.25rem" }}
+										style={{}}
 									>
 										{option}
 									</ToggleButton>
@@ -301,6 +303,20 @@ const ItemCard = ({ item, index, style }) => {
 							size="sm"
 						>
 							{file.name}
+						</Button>
+					))}
+
+					{/* GitHub Repos */}
+					{item.repos?.map((repo, index) => (
+						<Button
+							key={index}
+							href={repo.url}
+							variant="outline-success"
+							rel="noreferrer noopener"
+							target="_blank"
+							size="sm"
+						>
+							{repo.name}
 						</Button>
 					))}
 				</div>
