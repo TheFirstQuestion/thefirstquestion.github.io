@@ -9,8 +9,8 @@ export default function HomePage({ props }) {
 		<div className="row">
 			<div className="col-md-5">
 				<img
-					src="img/balloons.png"
-					alt="Steven, a white boy with short brown hair and black glasses. He's wearing a white baseball cap and wearing a blue and red striped rugby shirt with a white collar. He's holding a bunch of blue and red balloons and smiling broadly."
+					src="img/headshot-NY-mahjong.jpg"
+					alt="Steven, a white boy with fluffy brown hair and black glasses. He's wearing a blue and red striped rugby shirt with a white collar and smiling broadly."
 					className="img-fluid"
 				/>
 			</div>
