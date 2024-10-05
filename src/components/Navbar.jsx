@@ -1,54 +1,64 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar as BaseNavbar, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar({ props }) {
-	const [isExpanded, setExpanded] = useState(false);
 	const location = useLocation();
+	const [isExpanded, setIsExpanded] = useState(false);
 
-	function toggle() {
-		setExpanded(!isExpanded);
-	}
-
-	// Automatically collapse the navbar when the user has clicked on a link
+	// Close the navbar when the location changes
 	useEffect(() => {
-		setExpanded(false);
+		setIsExpanded(false);
 	}, [location]);
 
 	return (
-		<BaseNavbar
-			expand="lg"
-			expanded={isExpanded}
-			className="m-2 d-flex justify-content-between"
-		>
-			<BaseNavbar.Brand as={Link} to="/">
-				Steven G. Opferman
-			</BaseNavbar.Brand>
-
-			<BaseNavbar.Toggle
-				aria-controls="responsive-navbar-nav"
-				className="ml-auto"
-				onClick={toggle}
-			/>
-
-			<BaseNavbar.Collapse
-				id="responsive-navbar-nav"
-				className="d-flex justify-content-end align-items-start"
+		<>
+			<BaseNavbar
+				expand="lg"
+				className="m-2 d-flex justify-content-between"
+				expanded={isExpanded}
+				onToggle={(newState) => setIsExpanded(newState)}
+				// not sure why this doesn't work... maybe because Nav.Link is as={Link}?
+				onSelect={() => {
+					console.log("selected");
+					setIsExpanded(false);
+				}}
 			>
-				<Nav>
-					<Nav.Link as={Link} to="/timeline">
-						Things I've Done
-					</Nav.Link>
+				{/* md or bigger */}
+				<BaseNavbar.Brand
+					as={Link}
+					to="/"
+					className="d-none d-md-inline-block fs-3"
+				>
+					Steven G. Opferman
+				</BaseNavbar.Brand>
 
-					{/* <Nav.Link as={Link} to="/resources">
+				{/* smaller than md */}
+				<BaseNavbar.Brand as={Link} to="/" className="d-md-none fs-6">
+					Steven G. Opferman
+				</BaseNavbar.Brand>
+
+				<BaseNavbar.Toggle aria-controls="responsive-navbar-nav" />
+
+				<BaseNavbar.Collapse
+					id="responsive-navbar-nav"
+					className="justify-content-end"
+				>
+					<Nav>
+						<Nav.Link as={Link} to="/timeline">
+							Things I've Done
+						</Nav.Link>
+
+						{/* <Nav.Link as={Link} to="/resources">
 						Resources
 					</Nav.Link> */}
 
-					<Nav.Link as={Link} to="/contact" className="btn btn-warning">
-						Contact
-					</Nav.Link>
-				</Nav>
-			</BaseNavbar.Collapse>
-		</BaseNavbar>
+						<Nav.Link as={Link} to="/contact" className="btn btn-warning">
+							Contact
+						</Nav.Link>
+					</Nav>
+				</BaseNavbar.Collapse>
+			</BaseNavbar>
+		</>
 	);
 }
